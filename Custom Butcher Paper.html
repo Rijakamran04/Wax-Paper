@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <script src="assets/Javascript/java.js"></script>
+    <link rel="icon" href="assets/img/favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="assets/CSS/Style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom printed butcher paper - Wax Paper Globalr</title>
+    <meta
+      name="description"
+      content="Order custom printed butcher paper, perfect for wrapping meat and seafood or lining BBQs. Made from FDA-approved, durable materials with free design and shipping across the USA."
+    />
+  </head>
+  <body>
+    <div
+      class="flex text-[#d3996a] bg-[#123636] h-16 px-2 relative sticky top-0 z-50"
+    >
+      <div class="flex flex-1 text-center justify-center items-center">
+        Free Shipping all over USA
+      </div>
+      <div class="flex flex-row items-center md:absolute gap-2 top-2 right-0">
+        <i class="fa-solid fa-bag-shopping text-4xl"></i>
+        <div class="flex flex-col gap-0 md:mr-8">
+          <span class="m-0 p-0">11+</span>
+          <span class="m-0 p-0">Products</span>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar-Section -->
+    <div class="container sticky top-16 z-50 bg-white py-2">
+      <div class="flex flex-row justify-between items-center">
+        <div>
+          <img src="assets/img/logo.png" class="w-40" alt="logo" />
+        </div>
+        <div>
+          <ul class="flex flex-row font-semibold gap-8 hidden md:flex text-lg">
+            <a href="index.html">
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Home
+              </li>
+            </a>
+            <a href="Single-Product.html">
+              <li class="text-[#d3996a]">Product</li>
+            </a>
+            <a href="Blogs.html">
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Blogs
+              </li>
+            </a>
+            <a href="Contact.html">
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Contact Us
+              </li>
+            </a>
+          </ul>
+        </div>
+
+        <div>
+          <p
+            class="bg-[#123636] hidden md:flex text-[#d3996a] px-4 py-3 rounded-xl"
+          >
+            Get a Quote
+          </p>
+        </div>
+
+        <div class="flex md:hidden">
+          <i
+            class="fa-solid text-3xl fa-bars cursor-pointer"
+            onclick="toggleSidebar()"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add this sidebar right after the navbar section -->
+    <div
+      id="sidebar"
+      class="fixed top-0 right-0 h-full w-64 bg-[#123636] transform translate-x-full transition-transform duration-300 ease-in-out z-50"
+    >
+      <div
+        class="flex justify-between text-[#d3996a] items-center p-4 border-b border-[#d3996a]"
+      >
+        <h2 class="text-xl">Menu</h2>
+        <i
+          class="fa-solid text-[#d3996a] fa-times text-2xl cursor-pointer"
+          onclick="toggleSidebar()"
+        ></i>
+      </div>
+      <ul class="flex text-[#d3996a] flex-col p-4 gap-4">
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="Single-Product.html">
+          <li>Product</li>
+        </a>
+        <a href="Blogs.html">
+          <li>Blogs</li>
+        </a>
+        <a href="Contact.html">
+          <li>Contact Us</li>
+        </a>
+        <li class="cursor-pointer">Get a Quote</li>
+      </ul>
+    </div>
+
+    <!-- Add this overlay div right after the sidebar -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black opacity-50 hidden z-40"
+      onclick="toggleSidebar()"
+    ></div>
+
+    <!-- Custom Printed Tissue -->
+
+    <div class="container mx-auto pt-5 flex flex-col gap-5">
+      <div class="heading text-3xl">
+        Custom Printed
+        <span class="text-[#d3996a] heading text-3xl">Butcher </span>Paper
+      </div>
+      <div class="flex flex-col lg:flex-row gap-10">
+        <div class="flex flex-col gap-5">
+          <div class="h-[300px] md:h-[500px] overflow-hidden rounded-2xl">
+            <img
+              src="assets/Custom Butcher Paper/1.png"
+              class="rounded-2xl w-full h-full object-contain"
+            />
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <img
+              src="assets/Custom Butcher Paper/2.png"
+              class="w-36 mx-auto bg-[#123636] rounded-2xl h-28"
+            />
+            <img
+              src="assets/Custom Butcher Paper/3.png"
+              class="w-36 mx-auto bg-[#123636] rounded-2xl h-28"
+            />
+            <img
+              src="assets/Custom Butcher Paper/4.png"
+              class="w-36 mx-auto bg-[#123636] rounded-2xl h-28"
+            />
+            <img
+              src="assets/Custom Butcher Paper/5.png"
+              class="w-36 mx-auto bg-[#123636] rounded-2xl h-28"
+            />
+          </div>
+        </div>
+
+        <div class="h-auto md:h-[500px]">
+          <form class="gap-2 flex flex-col rounded-2xl bg-gray-100 p-4">
+            <!-- Name and Email Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-gray-700 mb-2">Name</label>
+                <input
+                  type="text"
+                  class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                />
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2">Email</label>
+                <input
+                  type="email"
+                  class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                />
+              </div>
+            </div>
+
+            <!-- Phone and Size Unit Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-gray-700 mb-2">Phone Number</label>
+                <input
+                  type="tel"
+                  class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                />
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2">Size Unit</label>
+                <select
+                  class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                >
+                  <option value="">Please choose an option</option>
+                  <option value="inches">Inches</option>
+                  <option value="cm">Centimeters</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Length and Width Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="flex gap-4">
+                <div class="w-1/2">
+                  <label class="block text-gray-700 mb-2">Length</label>
+                  <input
+                    type="number"
+                    class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  />
+                </div>
+                <div class="w-1/2">
+                  <label class="block text-gray-700 mb-2">Width</label>
+                  <input
+                    type="number"
+                    class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-gray-700 mb-2"
+                  >Select the Shipping Option</label
+                >
+                <select
+                  class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                >
+                  <option value="">Select Color to Print</option>
+                  <option value="standard">1 Color</option>
+                  <option value="express">2 Color</option>
+                  <option value="express">4 Color</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Shipping and Quantity Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-gray-700 mb-2"
+                  >Select the Shipping Option</label
+                >
+                <select
+                  class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                >
+                  <option value="">Please choose an option</option>
+                  <option value="standard">Standard Shipping</option>
+                  <option value="express">Express Shipping</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-gray-700 mb-2">Quantity</label>
+                <input
+                  type="number"
+                  class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                />
+              </div>
+            </div>
+
+            <!-- Other Requirements -->
+            <div class="flex flex-col md:flex-row gap-6">
+              <div class="md:w-1/2">
+                <label class="block text-gray-700 mb-2"
+                  >Other Requirements</label
+                >
+                <textarea
+                  rows="4"
+                  class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                ></textarea>
+              </div>
+
+              <div class="md:w-1/2">
+                <label class="block text-gray-700 mb-2"
+                  >Upload Prototype / Sample if you have</label
+                >
+                <div class="flex items-center gap-4">
+                  <label
+                    class="cursor-pointer bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300"
+                  >
+                    Choose File
+                    <input type="file" class="hidden" />
+                  </label>
+                  <span class="text-gray-500 text-sm">No File Chosen</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-5 justify-between">
+              <div
+                class="md:w-1/2 bg-white rounded-lg flex justify-around py-2 items-center"
+              >
+                <div class="flex justify-center items-center gap-2">
+                  <input type="checkbox" class="w-5 h-5" /> I am not a Robot
+                </div>
+                <img
+                  src="./Single Product _ Wax Paper_files/recaptcha.png"
+                  class="w-10"
+                />
+              </div>
+
+              <!-- Submit Button -->
+              <div class="flex justify-start">
+                <button
+                  type="submit"
+                  class="bg-orange-400 text-white px-8 py-3 rounded-lg hover:bg-orange-500 transition-colors"
+                >
+                  Submit Quote
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="help_button container mx-auto">
+      <div class="flex w-1/4 flex-col gap-2">
+        <i class="fas fa-leaf mx-auto text-xl -mb-2 text-[#d3996a]"></i>
+        <button>Eco Friendly</button>
+      </div>
+      <div class="flex w-1/4 flex-col gap-2">
+        <i class="fas text-[#d3996a] fa-star mx-auto text-xl -mb-2"></i>
+        <button>Premium Quality</button>
+      </div>
+      <div class="flex w-1/4 flex-col gap-2">
+        <i class="fas text-[#d3996a] fa-paint-brush mx-auto text-xl -mb-2"></i>
+        <button>Custom Design</button>
+      </div>
+      <div class="flex w-1/4 flex-col gap-2">
+        <i class="fas text-[#d3996a] fa-headset mx-auto text-xl -mb-2"></i>
+        <button>Support 24/7</button>
+      </div>
+    </div>
+
+    <!-- Custom-Wax-Paper-Section -->
+
+    <div
+      class="container mt-20 flex gap-10 md:gap-3 flex-col md:flex-row justify-center items-center"
+    >
+      <div class="flex w-full md:w-1/2 md:flex-1 gap-2 flex-col">
+        <div class="mb-5">
+          <p class="text-black text-4xl font-bold heading">
+            Custom Butcher Paper:
+          </p>
+          <p class="text-[#d3996a] text-2xl font-bold">A Game-Changer</p>
+        </div>
+
+        <p class="text-slate-600 text-justify">
+          In today's competitive food industry, <b>72% of consumers </b>are
+          influenced by packaging.<b> Wax Paper Global's</b> custom butcher
+          paper meets these demands by <b>preserving meat quality</b> and
+          <b>elevating brand presentation</b>.
+        </p>
+        <p class="text-slate-600 text-justify">
+          Our <b>breathable, food-safe butcher paper</b> is trusted by butchers,
+          BBQ restaurants, and caterers to ensure each cut reaches customers
+          <b>fresh, safe, and beautifully packaged</b>, enhancing both your
+          brand and customer experience.
+        </p>
+
+        <div class="flex flex-row mt-2 gap-5 w-full">
+          <button
+            class="border-2 rounded-xl w-52 text-center py-2 border-[#E8862D] text-black"
+          >
+            Get a Quote
+          </button>
+
+          <button
+            class="rounded-xl w-52 text-center py-2 font-semibold text-black bg-[#E8862D]"
+          >
+            Design Wax Paper
+          </button>
+        </div>
+      </div>
+      <div
+        class="flex flex-1 md:w-1/2 h-[40vh] md:h-[400px] lg:h-[500px] justify-end"
+      >
+        <img
+          src="assets/Custom Butcher Paper/Section 1/1.jpg"
+          class="rounded-2xl mx-auto md:mx-0 md:w-4/5 h-full object-cover"
+          alt="why-choose-img"
+        />
+      </div>
+    </div>
+
+    <!-- Custom-Printed-Food-Section -->
+
+    <div
+      class="container mt-20 mx-auto flex gap-10 md:gap-3 flex-col md:flex-row-reverse justify-center items-center"
+    >
+      <div class="flex w-full md:flex-1 gap-2 flex-col">
+        <div class="mb-5">
+          <p class="text-black text-3xl font-bold heading">
+            Make An Impact With
+          </p>
+          <p class="text-2xl text-[#d3996a] font-bold">Printed Butcher Paper</p>
+        </div>
+
+        <p class="text-[#D3996A] text-xl">Custom Branding</p>
+        <p class="text-gray-600 text-justify">
+          Make a <b>lasting impression</b> with our<b>
+            custom-printed butcher paper</b
+          >. Available in <b>white</b> and <b>pink</b>, our <b>eco-friendly paper</b> lets you
+          showcase your brand while safely wrapping raw meats and greasy foods.
+          Enhance your brand visibility and customer experience with Wax Paper
+          Global.
+        </p>
+        <p class="text-[#D3996A] text-xl">Durability & Functionality</p>
+        <p class="text-gray-600 text-justify">
+          Crafted with quality and sustainability in mind, our FDA-compliant
+          butcher paper offers excellent moisture resistance. Withstanding
+          temperatures from -30°F to 450°F, it's perfect for refrigerators,
+          freezers, and ovens. This versatile protection ensures your products
+          remain fresh and flavorful.
+        </p>
+        <p class="text-[#D3996A] text-xl">Versatile For Every Setting</p>
+        <p class="text-gray-600 text-justify">
+          From butcher shops to home kitchens, our custom butcher paper is ideal
+          for various settings. Whether you're a retailer or a restaurateur, our
+          breathable, food-safe paper preserves flavor and freshness. Our custom
+          printing options elevate your brand and captivate customers. Our
+          custom butcher paper is the perfect solution for wrapping succulent
+          steaks, fresh seafood, and other delicate foods.
+        </p>
+        <div class="flex my-2 flex-row gap-5 w-full">
+          <p
+            class="border-2 rounded-xl w-52 text-center py-2 border-[#E8862D] text-black"
+          >
+            Get a Quote
+          </p>
+
+          <p
+            class="rounded-xl w-52 text-center py-2 font-semibold text-black bg-[#E8862D]"
+          >
+            Design Wax Paper
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-1 md:w-1/2 h-[40vh] md:h-[400px] lg:h-[500px] justify-start"
+      >
+        <img
+          src="assets/Custom Butcher Paper/Section 2/2.jpg"
+          class="rounded-2xl mx-auto md:mx-0 md:w-4/5 h-full object-cover"
+          alt="why-choose-img"
+        />
+      </div>
+    </div>
+
+    <!-- Chart-Section -->
+    <div
+      class="container mt-20 mx-auto flex flex-col gap-10 justify-center items-center"
+    >
+      <p class="text-black text-3xl font-bold heading">
+        Custom Butcher Paper
+        <span class="text-[#d3996a] text-3xl heading">Specifications</span>
+      </p>
+
+      <div class="w-full md:w-3/4 lg:w-2/3">
+        <table class="w-full border">
+          <tbody>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold w-1/3">Sustainability</td>
+              <td class="py-2">Recyclable, eco-friendly</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold">Type</td>
+              <td class="py-2">Kraft Butcher Paper Rolls & Sheets</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold">Style</td>
+              <td class="py-2">Custom-Printed, Food-Safe Butcher Paper</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold">Material</td>
+              <td class="py-2">
+                CounterKraft Butcher Paper, White Butcher Paper
+              </td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold">Grammage</td>
+              <td class="py-2">40-50 gsm</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold">Certification</td>
+              <td class="py-2">FDA-Compliant</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold">Color</td>
+              <td class="py-2">Pink (CounterKraft) and White</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold">Color Options</td>
+              <td class="py-2">1, 2, 4 Colors PMS (Pantone Matching System)</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold">Ink Type</td>
+              <td class="py-2">Water-based foodsafe ink</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold">Print Process</td>
+              <td class="py-2">Offset, Flexo Printing</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold">Finish</td>
+              <td class="py-2">Machine Finished</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold">Temperature Resistance</td>
+              <td class="py-2">-30°F to 300°F</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold">Coating</td>
+              <td class="py-2">No Coatings</td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-2 pl-2 font-semibold">Discount</td>
+              <td class="py-2">Available on Bulk Orders</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Dimension Table -->
+
+    <div class="mt-10">
+      <p class="text-black text-4xl text-center heading font-bold">
+        Print Your Own
+      </p>
+
+      <p class="text-2xl text-[#d3996a] text-center font-bold">
+        Custom Papers in All Sizes and Colors
+      </p>
+    </div>
+    <div
+      class="container mt-10 mx-auto flex gap-10 md:gap-3 flex-col md:flex-row-reverse justify-center items-center"
+    >
+      <div class="flex w-full md:flex-1 md:w-1/2 gap-2 flex-col">
+        <div class="flex flex-col justify-center items-center">
+          <p class="text-[#D3996A] text-center heading text-lg">Dimensions</p>
+          <table
+            class="border text-center"
+            style="width: 100%; table-layout: fixed"
+          >
+            <tbody>
+              <tr>
+                <th
+                  class="bg-[#E8862D] p-2 text-sm text-white"
+                  style="width: 25%"
+                >
+                  4" x 4"
+                </th>
+                <th
+                  class="bg-[#E8862D] p-2 text-sm text-white"
+                  style="width: 25%"
+                >
+                  5" x 5"
+                </th>
+                <th
+                  class="bg-[#E8862D] p-2 text-sm text-white"
+                  style="width: 25%"
+                >
+                  6" x 5"
+                </th>
+                <th
+                  class="bg-[#E8862D] p-2 text-sm text-white"
+                  style="width: 25%"
+                >
+                  6" x 6"
+                </th>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">7" x 5"</td>
+                <td class="border border-gray-300 p-2">7" x 7"</td>
+                <td class="border border-gray-300 p-2">8" x 5"</td>
+                <td class="border border-gray-300 p-2">8" x 6"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">8" x 8"</td>
+                <td class="border border-gray-300 p-2">8" x 11"</td>
+                <td class="border border-gray-300 p-2">9" x 5"</td>
+                <td class="border border-gray-300 p-2">9" x 6"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">9" x 9"</td>
+                <td class="border border-gray-300 p-2">10" x 5"</td>
+                <td class="border border-gray-300 p-2">10" x 6"</td>
+                <td class="border border-gray-300 p-2">10" x 8"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">10" x 10"</td>
+                <td class="border border-gray-300 p-2">11" x 10"</td>
+                <td class="border border-gray-300 p-2">12" x 6"</td>
+                <td class="border border-gray-300 p-2">12" x 8"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">12" x 9"</td>
+                <td class="border border-gray-300 p-2">12" x 10"</td>
+                <td class="border border-gray-300 p-2">12" x 12"</td>
+                <td class="border border-gray-300 p-2">13" x 6"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">13" x 9"</td>
+                <td class="border border-gray-300 p-2">13" x 10"</td>
+                <td class="border border-gray-300 p-2">13" x 13"</td>
+                <td class="border border-gray-300 p-2">14" x 12"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">15" x 9"</td>
+                <td class="border border-gray-300 p-2">15" x 10"</td>
+                <td class="border border-gray-300 p-2">15" x 12"</td>
+                <td class="border border-gray-300 p-2">15" x 13"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">16" x 12"</td>
+                <td class="border border-gray-300 p-2">17" x 11"</td>
+                <td class="border border-gray-300 p-2">18" x 10"</td>
+                <td class="border border-gray-300 p-2">18" x 12"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">18" x 13"</td>
+                <td class="border border-gray-300 p-2">20" x 10"</td>
+                <td class="border border-gray-300 p-2">20" x 12"</td>
+                <td class="border border-gray-300 p-2">20" x 13"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">20" x 15"</td>
+                <td class="border border-gray-300 p-2">20" x 18"</td>
+                <td class="border border-gray-300 p-2">20" x 20"</td>
+                <td class="border border-gray-300 p-2">20" x 25"</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="flex flex-1 md:w-1/2 justify-start">
+        <img
+          src="assets/Dimension/Dimentions.jpg"
+          class="rounded-2xl md:scale-90 mx-auto md:mx-0 w-full h-full"
+          alt="why-choose-img"
+        />
+      </div>
+    </div>
+
+    <!-- Why-Choose-Section -->
+
+    <!-- <div
+      class="container mt-20 mx-auto flex gap-10 md:gap-3 flex-col md:flex-row justify-center items-center"
+    >
+      <div class="flex flex-1 gap-2 w-full md:w-1/2 flex-col">
+        <div class="mb-5 heading">
+          <p class="text-black text-2xl heading font-bold">
+            Why Choose Us For Buying
+          </p>
+          <p class="text-[#d3996a] text-2xl font-bold">Custom Wax Papers</p>
+        </div>
+        <div class="flex flex-row gap-5">
+          <div>
+            <i
+              class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+            ></i>
+          </div>
+          <p>No additional charges for art plates and setup</p>
+        </div>
+
+        <div class="flex flex-row gap-5">
+          <div>
+            <i
+              class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+            ></i>
+          </div>
+          <p>Free shipping facility for US-based clients</p>
+        </div>
+
+        <div class="flex flex-row gap-5">
+          <div>
+            <i
+              class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+            ></i>
+          </div>
+          <p>1-color, 2-color or 4-color color printing</p>
+        </div>
+
+        <div class="flex flex-row gap-5">
+          <div>
+            <i
+              class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+            ></i>
+          </div>
+          <p>Standard and specific sizes for paper sheets</p>
+        </div>
+
+        <div class="flex flex-row gap-5">
+          <div>
+            <i
+              class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+            ></i>
+          </div>
+          <p>Availability of white and brown kraft paper</p>
+        </div>
+      </div>
+      <div class="flex flex-1 justify-center items-center md:justify-start">
+        <div class="grid grid-cols-2 gap-4">
+          <img
+            src="assets/img/why-choose.png"
+            class="rounded-2xl w-[200px] h-[200px] object-cover"
+            alt="why-choose-img"
+          />
+          <img
+            src="assets/img/why-choose.png"
+            class="rounded-2xl w-[200px] h-[200px] object-cover"
+            alt="why-choose-img"
+          />
+          <img
+            src="assets/img/why-choose.png"
+            class="rounded-2xl w-[200px] h-[200px] object-cover"
+            alt="why-choose-img"
+          />
+          <img
+            src="assets/img/why-choose.png"
+            class="rounded-2xl w-[200px] h-[200px] object-cover"
+            alt="why-choose-img"
+          />
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Frequently-Asked-Questions-Section -->
+
+    <div class="container mt-20 flex flex-col gap-10 md:flex-row">
+      <div class="flex flex-col gap-4 w-full md:w-1/2">
+        <p class="heading mt-3 mb-10 text-3xl">
+          Frequently Asked
+          <span class="text-[#d3996a] heading text-3xl">Questions</span>
+        </p>
+        <div class="flex gap-4">
+          <button
+            class="border-2 rounded-xl w-40 md:w-52 text-center px-1 md:px-4 py-2 border-[#E8862D] text-black"
+          >
+            Get a Quote
+          </button>
+          <button
+            class="bg-[#e8862d] w-40 md:w-52 text-center text-black px-1 md:px-4 py-2 rounded-xl"
+          >
+            Ask Another Question
+          </button>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2 flex flex-col gap-4">
+        <!-- FAQ 1 -->
+        <div class="faq-item border rounded-2xl overflow-hidden">
+          <div
+            class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
+            onclick="toggleFAQ(this)"
+          >
+            <p>Can you print on butcher paper?</p>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
+          </div>
+          <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
+            Yes, you can order custom printed butcher paper with your logo, QR
+            codes, and a variety of design patterns.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item border rounded-2xl overflow-hidden">
+          <div
+            class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
+            onclick="toggleFAQ(this)"
+          >
+            <p>How can I use custom butcher paper?</p>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
+          </div>
+          <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
+            Custom butcher paper is a versatile tool for food service and
+            packaging:
+            <ul class="list-disc pl-5">
+              <li>
+                Wrap Meat: Preserve freshness with custom wraps for steaks,
+                chops, roasts, and poultry.
+              </li>
+              <li>
+                Store Meat: Protect cuts from freezer burn when storing in the
+                freezer.
+              </li>
+              <li>
+                Line Trays: Keep trays clean and prevent sticking during food
+                prep.
+              </li>
+              <li>
+                Food Presentation: Wrap sandwiches, burgers, and deli items for
+                a polished look.
+              </li>
+              <li>
+                Branding: Add your logo for a unique touch and enhanced brand
+                visibility.
+              </li>
+            </ul>
+            Elevate your meat handling, packaging, and presentation with custom
+            butcher paper!
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item border rounded-2xl overflow-hidden">
+          <div
+            class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
+            onclick="toggleFAQ(this)"
+          >
+            <p>Can I leave meat in butcher paper?</p>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
+          </div>
+          <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
+            Yes, you can leave meat in butcher paper. It's a common method for
+            storing meat, especially in butcher shops and grocery stores.
+            Butcher paper helps to maintain the quality of the meat by absorbing
+            excess moisture and preventing spoilage.
+            <br /><br />
+            However, it's important to store the meat in a cool, dry place, such
+            as a refrigerator or freezer. Additionally, you should check the
+            meat regularly for any signs of spoilage.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item border rounded-2xl overflow-hidden">
+          <div
+            class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
+            onclick="toggleFAQ(this)"
+          >
+            <p>Will I need to approve my butcher paper before it's printed?</p>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
+          </div>
+          <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
+            You got it right! We’ll send you a proof of your butcher paper for
+            approval before printing begins. This ensures everything meets your
+            expectations and allows for any final adjustments. Your order won’t
+            move to production until you’re completely satisfied!
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item border rounded-2xl overflow-hidden">
+          <div
+            class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
+            onclick="toggleFAQ(this)"
+          >
+            <p>Can I Update My Order After Payment?</p>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
+          </div>
+          <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
+            Absolutely! We understand plans can change, and we’re here to help.
+            You can request design changes from the moment we start designing
+            until we send the final design to you for approval. You can also
+            adjust details like sheet size or type before we begin printing.
+            <br /><br />
+            We begin designing within 24 hours of your order, and printing
+            starts right after design approval. Need updates? Contact us to make
+            your project perfect!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Highlights -->
+
+    <!-- <div
+      class="container mx-auto my-10 justify-center items-center flex flex-col"
+    >
+      <div class="flex justify-center items-center text-2xl heading">
+        Product Highlights
+      </div>
+
+      <div
+        class="flex w-full justify-between mt-10 flex-col md:flex-row gap-10"
+      >
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>Personalized Prints</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>High-Quality Material</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>Food Safe</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>Moisture Resistant</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>Grease Proof</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>Customizable Dimensions</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>Versatile Use</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>Environmentally Friendly</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>High-Resolution Printing</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>Enhances Presentation</span>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>Customizable Dimensions</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>Versatile Use</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>Environmentally Friendly</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>High-Resolution Printing</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i
+              class="fa-solid fa-check p-1 bg-[#d3996a] text-white rounded-full"
+            ></i>
+            <span>Enhances Presentation</span>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Related Products -->
+    <div class="container mt-20 mx-auto">
+      <p class="text-[#D3996A] text-3xl font-bold heading">
+        <span class="text-black heading text-3xl">Related</span> Product
+      </p>
+      <div
+        class="flex my-5 gap-5 flex-col md:flex-row-reverse justify-center items-center"
+      >
+        <div class="flex flex-1 justify-around">
+          <div class="grid grid-cols-2 gap-10 w-full">
+            <div class="flex flex-col gap-2">
+              <div class="h-40 w-full relative group">
+                <img
+                  src="assets/Best Selling Products/1-Custom Greaseproof Paper.jpg"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Single-Product.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Product</span
+                  >
+                </a>
+              </div>
+              <p class="text-gray-400">Custom Wax Paper</p>
+              <button
+                class="border-2 rounded-xl w-32 text-center py-1 border-[#E8862D] text-black"
+              >
+                Get a Quote
+              </button>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="h-40 w-full relative group">
+                <img
+                  src="assets/Best Selling Products/2-Custom Hot Paper.jpg"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Single-Product.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Product</span
+                  >
+                </a>
+              </div>
+              <p class="text-gray-400">Custom Wax Paper</p>
+              <button
+                class="border-2 rounded-xl w-32 text-center py-1 border-[#E8862D] text-black"
+              >
+                Get a Quote
+              </button>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="h-40 w-full relative group">
+                <img
+                  src="assets/Best Selling Products/3-Custom Kraft Paper.jpg"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Single-Product.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Product</span
+                  >
+                </a>
+              </div>
+              <p class="text-gray-400">Custom Wax Paper</p>
+              <button
+                class="border-2 rounded-xl w-32 text-center py-1 border-[#E8862D] text-black"
+              >
+                Get a Quote
+              </button>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="h-40 w-full relative group">
+                <img
+                  src="assets/Best Selling Products/4- Custom Basket Line.jpg"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Single-Product.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Product</span
+                  >
+                </a>
+              </div>
+              <p class="text-gray-400">Custom Wax Paper</p>
+              <button
+                class="border-2 rounded-xl w-32 text-center py-1 border-[#E8862D] text-black"
+              >
+                Get a Quote
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-1 gap-2 flex-col md:w-[40%] my-5 justify-start">
+          <img
+            src="assets/Best Selling Products/Main Large-Custom Deli Paper.jpg"
+            class="rounded-2xl w-full md:w-4/5"
+            alt="why-choose-img"
+          />
+          <div class="flex items-center gap-2">
+            <button
+              class="border-2 rounded-xl w-32 text-center py-1 border-[#E8862D] text-black"
+            >
+              Get a Quote
+            </button>
+            <p class="text-gray-400">Custom Wax Paper</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest Articles -->
+    <div class="container mt-20 mx-auto">
+      <p class="text-3xl font-bold heading">
+        Latest Articles and <span class="text-[#D3996A] heading">Blogs</span>
+      </p>
+      <div
+        class="flex my-5 gap-5 flex-col md:flex-row justify-center items-center"
+      >
+        <div class="flex flex-1 justify-center items-center">
+          <div class="flex flex-col gap-5 w-full">
+            <!-- First Article -->
+            <div class="flex flex-col gap-2">
+              <div class="h-[230px] w-full relative group">
+                <img
+                  src="assets/img/latest.png"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Blogs.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Blog</span
+                  >
+                </a>
+              </div>
+              <p class="font-bold text-xl">How to provide insights</p>
+              <p class="text-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quaerat quo laboriosa.
+              </p>
+            </div>
+
+            <!-- Second Article -->
+            <div class="flex flex-col gap-2">
+              <div class="h-[230px] w-full relative group">
+                <img
+                  src="assets/img/latest.png"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Blogs.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Blog</span
+                  >
+                </a>
+              </div>
+              <p class="font-bold text-xl">How to provide insights</p>
+              <p class="text-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quaerat quo laboriosa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-1 justify-center items-center">
+          <div class="flex flex-col gap-5 w-full">
+            <!-- Third Article -->
+            <div class="flex flex-col gap-2">
+              <div class="h-[230px] w-full relative group">
+                <img
+                  src="assets/img/latest.png"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Blogs.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Blog</span
+                  >
+                </a>
+              </div>
+              <p class="font-bold text-xl">How to provide insights</p>
+              <p class="text-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quaerat quo laboriosa.
+              </p>
+            </div>
+
+            <!-- Fourth Article -->
+            <div class="flex flex-col gap-2">
+              <div class="h-[230px] w-full relative group">
+                <img
+                  src="assets/img/latest.png"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Blogs.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Blog</span
+                  >
+                </a>
+              </div>
+              <p class="font-bold text-xl">How to provide insights</p>
+              <p class="text-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quaerat quo laboriosa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+
+    <div class="bg-[#123636]">
+      <div class="flex flex-col gap-10 md:gap-0 py-20 md:flex-row">
+        <div
+          class="flex justify-center items-start md:w-1/3 w-full flex-col gap-5 px-5 text-[#d3996a]"
+        >
+          <div class="flex items-start gap-2">
+            <img
+              src="assets/img/Logo/Footer Logo.png"
+              class="scale-90"
+              alt="Logo"
+            />
+            <!-- <p class="text-3xl heading text-[#d3996a]">Wax Paper</p> -->
+          </div>
+          <p class="text-justify">
+            We are trusted custom wax paper printing company, dedicated to
+            delivering high-quality products and creative designs from concept
+            to creation. Serving top brands across the USA
+          </p>
+          <div>
+            <button
+              class="w-52 bg-[#e8862d] text-[#123636] rounded-lg py-1 text-center text-lg"
+            >
+              Get a Quote
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="md:w-1/3 flex items-center px-5 md:justify-center text-[#d3996a] w-full"
+        >
+          <ul class="flex flex-col text-lg gap-2">
+            <li><a href="#"> Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Get a Quote</a></li>
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">User Guide</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div
+          class="md:w-1/3 flex items-center px-5 md:justify-center text-[#d3996a] w-full"
+        >
+          <ul class="flex flex-col text-lg gap-2">
+            <li>888-836-3696</li>
+            <li>sales@waxpapers.net</li>
+            <li>285 NOSTRAND</li>
+            <li>AVE UNIT #120</li>
+            <li>BROOKLYN, NY 11216</li>
+
+            <li class="text-center text-2xl font-bold">Follow</li>
+
+            <li class="flex gap-5">
+              <a href="#"> <i class="fa-brands text-3xl fa-facebook"></i> </a
+              ><a href="#"> <i class="fa-brands text-3xl fa-instagram"></i> </a
+              ><a href="#"> <i class="fa-brands text-3xl fa-linkedin"></i> </a
+              ><a href="#">
+                <i class="fa-brands fa-twitter text-3xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

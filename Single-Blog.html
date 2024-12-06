@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <script src="assets/Javascript/java.js"></script>
+    <link rel="icon" href="assets/img/favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="assets/CSS/Style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Blog | Wax Paper</title>
+  </head>
+  <body>
+    <div class="flex text-[#d3996a] bg-[#123636] h-16 px-2 relative">
+      <div class="flex flex-1 text-center justify-center items-center">
+        Free Shipping all over USA
+      </div>
+      <div class="flex flex-row items-center md:absolute gap-2 top-2 right-0">
+        <i class="fa-solid fa-bag-shopping text-4xl"></i>
+        <div class="flex flex-col gap-0 md:mr-8">
+          <span class="m-0 p-0">11+</span>
+          <span class="m-0 p-0">Products</span>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar-Section -->
+    <div class="container py-2">
+      <div class="flex flex-row justify-between items-center">
+        <div>
+          <img src="assets/img/logo.png" class="w-40" alt="logo" />
+        </div>
+        <div>
+          <ul class="flex flex-row font-semibold gap-8 hidden md:flex text-lg">
+            <a href="index.html">
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Home
+              </li>
+            </a>
+            <a href="Single-Product.html">
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Product
+              </li>
+            </a>
+            <a href="Blogs.html">
+              <li class="text-[#d3996a]">Blogs</li>
+            </a>
+            <a href="Contact.html">
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Contact Us
+              </li>
+            </a>
+          </ul>
+        </div>
+
+        <div>
+          <p
+            class="bg-[#123636] hidden md:flex text-[#d3996a] px-4 py-3 rounded-xl"
+          >
+            Get a Quote
+          </p>
+        </div>
+
+        <div class="flex md:hidden">
+          <i
+            class="fa-solid text-3xl fa-bars cursor-pointer"
+            onclick="toggleSidebar()"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add this sidebar right after the navbar section -->
+    <div
+      id="sidebar"
+      class="fixed top-0 right-0 h-full w-64 bg-[#123636] transform translate-x-full transition-transform duration-300 ease-in-out z-50"
+    >
+      <div
+        class="flex justify-between text-[#d3996a] items-center p-4 border-b border-[#d3996a]"
+      >
+        <h2 class="text-xl">Menu</h2>
+        <i
+          class="fa-solid text-[#d3996a] fa-times text-2xl cursor-pointer"
+          onclick="toggleSidebar()"
+        ></i>
+      </div>
+      <ul class="flex text-[#d3996a] flex-col p-4 gap-4">
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="Single-Product.html">
+          <li>Product</li>
+        </a>
+        <a href="Blogs.html">
+          <li>Blogs</li>
+        </a>
+        <a href="Contact.html">
+          <li>Contact Us</li>
+        </a>
+        <li class="cursor-pointer">Get a Quote</li>
+      </ul>
+    </div>
+
+    <!-- Add this overlay div right after the sidebar -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black opacity-50 hidden z-40"
+      onclick="toggleSidebar()"
+    ></div>
+
+    <!-- Hero section -->
+
+    <div class="container mx-auto my-10">
+      <div class="flex flex-col">
+        <div class="flex justify-center items-center gap-5 flex-col">
+          <p
+            class="text-center w-20 rounded-2xl bg-gray-200 text-gray-600 text-sm py-2"
+          >
+            Feature
+          </p>
+
+          <div class="font-bold">
+            <h1 class="heading text-3xl">How to use Custom Wax Paper,</h1>
+            <h1 class="heading text-3xl text-center">Building and Sharing</h1>
+          </div>
+          <p>22 January, 2024 - 8:00 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto">
+      <img src="./assets/img/blogHero.png" class="rounded-2xl" />
+    </div>
+
+    <!-- Blog Content Section -->
+    <div
+      class="container flex flex-col justify-start items-center text-justify md:flex-row mx-auto my-10"
+    >
+      <div class="flex w-[90%] md:w-[30%] self-start">
+        <div class="rounded-2xl w-full p-5">
+          <ul
+            class="h-[200px] overflow-y-scroll pr-4 pl-4"
+            style="direction: rtl"
+          >
+            <div style="direction: ltr; margin-left: 0">
+              <li>Organize your Contacts</li>
+              <li>Organize your Contacts</li>
+              <li>Organize your Contacts</li>
+              <li>Organize your Contacts</li>
+              <li>Organize your Contacts</li>
+              <li>Organize your Contacts</li>
+              <li>Organize your Contacts</li>
+              <li>Organize your Contacts</li>
+              <li>Organize your Contacts</li>
+              <li>Organize your Contacts</li>
+              <li>Organize your Contacts</li>
+              <li>Organize your Contacts</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+
+      <div class="md:w-[70%] w-[90%] flex flex-col gap-5">
+        <div>
+          <p class="text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            minima explicabo necessitatibus, beatae quos nobis similique
+            quaerat, placeat voluptatibus voluptate recusandae eaque, nulla
+            repellendus dicta vero quo exercitationem facere obcaecati? Tempora,
+            excepturi consectetur modi dolorem tenetur corporis quibusdam
+            aliquid minima, rem laboriosam quaerat.
+          </p>
+        </div>
+
+        <div>
+          <h1 class="font-bold text-2xl my-3">Organize you Contacts</h1>
+
+          <p class="text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, ut
+            fuga sequi impedit maiores, facere praesentium veritatis officia
+            omnis laudantium expedita blanditiis? Fugiat laudantium optio minima
+            ipsum ut in deserunt quibusdam rerum iste ipsam dignissimos atque
+            amet quod ratione dolor cumque dolorum, nam illo blanditiis
+            temporibus aliquam, corrupti reiciendis ducimus? Accusantium, quo
+            laborum sequi nemo eligendi commodi perspiciatis, vitae sed at fugit
+            recusandae. Temporibus facere odio suscipit ad, sequi incidunt
+            dolor! Facilis nisi doloribus qui aut est itaque, laudantium
+            mollitia? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Iusto ea laudantium dolorem eius totam quis, dolores voluptatem est
+            voluptas neque!
+          </p>
+        </div>
+
+        <div>
+          <h1 class="font-bold my-2 text-2xl">Organize you Contact</h1>
+
+          <p class="text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab
+            reiciendis, ducimus sapiente accusantium quisquam hic. Unde
+            exercitationem voluptatibus dicta maiores expedita. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Expedita rerum quos
+            incidunt suscipit quia id quasi nulla? Fugiat, nulla molestias.
+          </p>
+        </div>
+
+        <div>
+          <h1 class="font-bold my-2 text-2xl">Organize you Contact</h1>
+
+          <p class="text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab
+            reiciendis, ducimus sapiente accusantium quisquam hic. Unde
+            exercitationem voluptatibus dicta maiores expedita.
+          </p>
+
+          <ul class="list-disc mt-10 gap-5 ml-6">
+            <li class="mb-3">
+              <strong>Baking and Cooking:</strong> for lining pans. It also
+              prevents the food from getting sticky.
+            </li>
+            <li class="mb-3">
+              <strong>Food Wrapping:</strong> you can wrap greasy or oily foods
+              that are prone to leakage or contamination.
+            </li>
+            <li class="mb-3">
+              <strong>Roasting and Grilling:</strong> you can line the grills to
+              prevent the food from sticking and offer easy flipping or removal.
+            </li>
+            <li class="mb-3">
+              <strong>Confectionery:</strong> helps in candy-making and
+              confectionery making it best for rolling dough and lining trays.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Blogs -->
+    <div class="container flex flex-col my-10 md:flex-row gap-10 mx-auto">
+      <div class="flex flex-col gap-2 w-full w-1/3">
+        <img src="assets/img/blog.jpg" class="h-52 rounded-2xl" />
+        <p class="font-bold text-xl">How to provide team insights</p>
+        <p class="text-sm text-gray-400">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+        </p>
+        <p class="underline text-blue-400 cursor-pointer">Read More</p>
+      </div>
+
+      <div class="flex flex-col gap-2 w-full w-1/3">
+        <img src="assets/img/blog.jpg" class="h-52 rounded-2xl" />
+        <p class="font-bold text-xl">How to provide team insights</p>
+        <p class="text-sm text-gray-400">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+        </p>
+        <p class="underline text-blue-400 cursor-pointer">Read More</p>
+      </div>
+
+      <div class="flex flex-col gap-2 w-full w-1/3">
+        <img src="assets/img/blog.jpg" class="h-52 rounded-2xl" />
+        <p class="font-bold text-xl">How to provide team insights</p>
+        <p class="text-sm text-gray-400">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+        </p>
+        <p class="underline text-blue-400 cursor-pointer">Read More</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-[#123636]">
+      <div class="flex flex-col gap-10 md:gap-0 py-20 md:flex-row">
+        <div
+          class="flex justify-center items-center md:w-1/3 w-full flex-col gap-5 px-5 text-[#d3996a]"
+        >
+          <div class="flex items-center gap-2">
+            <img src="assets/img/Logo/Logo.png" class="h-32" alt="Logo" />
+            <p class="text-3xl heading text-[#d3996a]">Wax Paper</p>
+          </div>
+          <p class="text-justify">
+            We are an experienced custom paper printing company working in
+            collaboration with the leading brands globally. With beautiful
+            designs and the best quality, we manufacture greatness.
+          </p>
+          <div>
+            <div
+              class="w-52 bg-[#e8862d] text-[#123636] rounded-lg py-1 text-center text-lg"
+            >
+              Get a Quote
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="md:w-1/3 flex items-center px-5 md:justify-center text-[#d3996a] w-full"
+        >
+          <ul class="flex flex-col text-lg gap-2">
+            <li><a href="#"> Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Get a Quote</a></li>
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">User Guide</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div
+          class="md:w-1/3 flex items-center px-5 md:justify-center text-[#d3996a] w-full"
+        >
+          <ul class="flex flex-col text-lg gap-2">
+            <li>888-836-3696</li>
+            <li>sales@waxpapers.net</li>
+            <li>285 NOSTRAND</li>
+            <li>AVE UNIT #120</li>
+            <li>BROOKLYN, NY 11216</li>
+
+            <li class="text-center text-2xl font-bold">Follow</li>
+
+            <li class="flex gap-5">
+              <a href="#"> <i class="fa-brands text-3xl fa-facebook"></i> </a
+              ><a href="#"> <i class="fa-brands text-3xl fa-instagram"></i> </a
+              ><a href="#"> <i class="fa-brands text-3xl fa-linkedin"></i> </a
+              ><a href="#">
+                <i class="fa-brands fa-twitter text-3xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

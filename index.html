@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/CSS/Style.css" />
+    <script src="assets/Javascript/java.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              "2xl": "1400px", // Set 2xl breakpoint to 1400px
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Custom Printed Wax Paper for Food - Wax Paper Global</title>
+    <meta
+      name="title"
+      content="Custom Printed Wax Paper for Food - Wax Paper Global"
+    />
+    <meta
+      name="description"
+      content="Order custom printed wax paper with free design and shipping across the USA. Design your wax paper live with our online tool."
+    />
+  </head>
+  <body>
+    <div
+      class="flex sticky top-0 text-[#d3996a] z-50 bg-[#123636] h-16 px-2 relative"
+    >
+      <div class="flex flex-1 text-center justify-center items-center">
+        Free Shipping all over USA
+      </div>
+      <div class="flex flex-row items-center md:absolute gap-2 top-2 right-0">
+        <i class="fa-solid fa-bag-shopping text-4xl"></i>
+        <div class="flex flex-col gap-0 md:mr-8">
+          <span class="m-0 p-0">11+</span>
+          <span class="m-0 p-0">Products</span>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar-Section -->
+    <div
+      class="container sticky top-16 z-50 bg-white py-2 transition-transform duration-300"
+    >
+      <div class="flex flex-row justify-between items-center">
+        <div>
+          <img src="assets/img/logo.png" class="w-40" alt="logo" />
+        </div>
+        <div>
+          <ul class="flex flex-row font-semibold gap-8 hidden md:flex text-lg">
+            <a href="index.html">
+              <li class="text-[#d3996a]">Home</li>
+            </a>
+            <a href="Single-Product.html">
+              <li class="hover:text-[#d3996a] duration-300">Product</li>
+            </a>
+            <a href="Blogs.html">
+              <li class="hover:text-[#d3996a] duration-300">Blogs</li>
+            </a>
+            <a href="Contact.html">
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Contact Us
+              </li>
+            </a>
+          </ul>
+        </div>
+
+        <div>
+          <button
+            class="bg-[#123636] hidden md:flex text-[#d3996a] px-4 py-3 rounded-xl"
+          >
+            Get a Quote
+          </button>
+        </div>
+
+        <div class="flex md:hidden">
+          <i
+            class="fa-solid text-3xl fa-bars cursor-pointer"
+            onclick="toggleSidebar()"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add this sidebar right after the navbar section -->
+    <div
+      id="sidebar"
+      class="fixed top-0 right-0 h-full w-64 bg-[#123636] transform translate-x-full transition-transform duration-300 ease-in-out z-50"
+    >
+      <div
+        class="flex justify-between text-[#d3996a] items-center p-4 border-b border-[#d3996a]"
+      >
+        <h2 class="text-xl">Menu</h2>
+        <i
+          class="fa-solid text-[#d3996a] fa-times text-2xl cursor-pointer"
+          onclick="toggleSidebar()"
+        ></i>
+      </div>
+      <ul class="flex text-[#d3996a] flex-col p-4 gap-4">
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="Single-Product.html">
+          <li>Product</li>
+        </a>
+        <a href="Blogs.html">
+          <li>Blogs</li>
+        </a>
+        <a href="Contact.html">
+          <li>Contact Us</li>
+        </a>
+        <li class="cursor-pointer">Get a Quote</li>
+      </ul>
+    </div>
+
+    <!-- Add this overlay div right after the sidebar -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black opacity-50 hidden z-40"
+      onclick="toggleSidebar()"
+    ></div>
+    <!-- Hero-Section -->
+
+    <div class="md:my-20 mx-0 md:mx-20 lg:mx-0">
+      <div class="container my-20">
+        <div class="bg-[#123636] rounded-2xl mx-0">
+          <div class="flex flex-row">
+            <div class="flex flex-col div1 text-[#d3996a]">
+              <h1 class="heading head font-semibold">
+                Custom Printed<br />
+                Wax Paper
+              </h1>
+              <p class="">
+                Create Custom Wax Papers <br />
+                with logo using our design tool.
+              </p>
+              <div>
+                <button
+                  class="bg-[#e8862d] text-[#123636] font-semibold rounded-xl"
+                >
+                  Design Custom Wax Paper
+                </button>
+              </div>
+            </div>
+            <div class="relative div2">
+              <img
+                src="assets/img/Hero/Hero Page.png"
+                class="hero-img"
+                alt="hero-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product-Section -->
+    <div class="container mt-20 mx-auto px-4">
+      <!-- Heading Section -->
+      <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center gap-2">
+          <p class="heading mt-3 mb-10 text-3xl">
+            Our
+            <span class="text-[#d3996a] heading text-3xl">Products</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
+        <!-- Custom Deli Paper -->
+        <div
+          class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
+        >
+          <div
+            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
+          >
+            <img
+              src="assets/Home Page/Tile Images/Custom Deli Paper.png"
+              class="object-contain w-full h-full"
+              alt="Custom Deli Paper"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <a href="Custom Deli Paper.html">
+                <span
+                  class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
+                  >View Product</span
+                >
+              </a>
+            </div>
+          </div>
+          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+            Custom Deli Paper
+          </p>
+        </div>
+
+        <!-- Custom Butcher Paper -->
+        <div
+          class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
+        >
+          <div
+            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
+          >
+            <img
+              src="assets/Home Page/Tile Images/Custom Butcher Paper.png"
+              class="object-contain w-full h-full"
+              alt="Custom Butcher Paper"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <a href="Custom Butcher Paper.html">
+                <span
+                  class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
+                  >View Product</span
+                >
+              </a>
+            </div>
+          </div>
+          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+            Custom Butcher Paper
+          </p>
+        </div>
+
+        <!-- Custom Kraft Paper -->
+        <div
+          class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
+        >
+          <div
+            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
+          >
+            <img
+              src="assets/Home Page/Tile Images/Custom Kraft Paper.png"
+              class="object-contain w-full h-full"
+              alt="Custom Kraft Paper"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <a href="Custom Kraft Paper.html">
+                <span
+                  class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
+                  >View Product</span
+                >
+              </a>
+            </div>
+          </div>
+          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+            Custom Kraft Paper
+          </p>
+        </div>
+
+        <!-- Custom Parchment Paper -->
+        <div
+          class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
+        >
+          <div
+            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
+          >
+            <img
+              src="assets/Home Page/Tile Images/Custom Parchment Paper.png"
+              class="object-contain w-full h-full"
+              alt="Custom Parchment Paper"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <a href="Custom Parchment Paper.html">
+                <span
+                  class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
+                  >View Product</span
+                >
+              </a>
+            </div>
+          </div>
+          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+            Custom Parchment Paper
+          </p>
+        </div>
+
+        <!-- Custom Greaseproof Paper -->
+        <div
+          class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
+        >
+          <div
+            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
+          >
+            <img
+              src="assets/Home Page/Tile Images/Custom Greaseproof Paper.png"
+              class="object-contain w-full h-full"
+              alt="Custom Greaseproof Paper"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <a href="Custom Greaseproof Paper.html">
+                <span
+                  class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
+                  >View Product</span
+                >
+              </a>
+            </div>
+          </div>
+          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+            Custom Greaseproof Paper
+          </p>
+        </div>
+
+        <!-- Custom Sandwich Paper -->
+        <div
+          class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
+        >
+          <div
+            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
+          >
+            <img
+              src="assets/Home Page/Tile Images/Custom Sandwich Paper.png"
+              class="object-contain w-full h-full"
+              alt="Custom Sandwich Paper"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <a href="Custom Sandwich Paper.html">
+                <span
+                  class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
+                  >View Product</span
+                >
+              </a>
+            </div>
+          </div>
+          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+            Custom Sandwich Paper
+          </p>
+        </div>
+
+        <!-- Custom Cheese Paper -->
+        <div
+          class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
+        >
+          <div
+            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
+          >
+            <img
+              src="assets/Home Page/Tile Images/Custom Cheese Paper.png"
+              class="object-contain w-full h-full"
+              alt="Custom Cheese Paper"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <a href="Custom Cheese Paper.html">
+                <span
+                  class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
+                  >View Product</span
+                >
+              </a>
+            </div>
+          </div>
+          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+            Custom Cheese Paper
+          </p>
+        </div>
+
+        <!-- Custom Basket Liner -->
+        <div
+          class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
+        >
+          <div
+            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
+          >
+            <img
+              src="assets/Home Page/Tile Images/Custom Basket Liner.png"
+              class="object-contain w-full h-full"
+              alt="Custom Basket Liner"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <a href="Custom Basket Liner.html">
+                <span
+                  class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
+                  >View Product</span
+                >
+              </a>
+            </div>
+          </div>
+          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+            Custom Basket Liner
+          </p>
+        </div>
+
+        <!-- Custom Hot Paper -->
+        <div
+          class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
+        >
+          <div
+            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
+          >
+            <img
+              src="assets/Home Page/Tile Images/Custom Freezer Paper.png"
+              class="object-contain w-full h-full"
+              alt="Custom Freezer Paper"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <a href="Custom Freezer Paper.html">
+                <span
+                  class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
+                  >View Product</span
+                >
+              </a>
+            </div>
+          </div>
+          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+            Custom Freezer Paper
+          </p>
+        </div>
+        <div
+          class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
+        >
+          <div
+            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
+          >
+            <img
+              src="assets/Home Page/Tile Images/Custom Food Paper.png"
+              class="object-contain w-full h-full"
+              alt="Custom Food Paper"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <a href="Custom Food Paper.html">
+                <span
+                  class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
+                  >View Product</span
+                >
+              </a>
+            </div>
+          </div>
+          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+            Custom Food Paper
+          </p>
+        </div>
+        <div
+          class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
+        >
+          <div
+            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
+          >
+            <img
+              src="assets/Home Page/Tile Images/Custom Hot Paper.png"
+              class="object-contain w-full h-full"
+              alt="Custom Hot Paper"
+            />
+            <div
+              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+            >
+              <a href="Custom Hot Paper.html">
+                <span
+                  class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
+                  >View Product</span
+                >
+              </a>
+            </div>
+          </div>
+          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+            Custom Hot Paper
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Why-Choose-Section -->
+
+    <div
+      class="container my-5 mt-20 mx-auto flex gap-10 md:gap-3 flex-col md:flex-row justify-center items-center"
+    >
+      <div class="flex flex-1 gap-2 w-full md:w-1/2 flex-col">
+        <div class="mb-5 heading">
+          <p class="text-black text-3xl heading font-bold">
+            Why Wax Paper Global is Popular
+          </p>
+          <p class="text-[#d3996a] text-2xl font-bold">Across the USA</p>
+          <p class="text-sm text-gray-400 mt-5">
+            Our commitment to quality and convenience has made us a top choice
+            in custom wax paper for food. Here's what sets us apart:
+          </p>
+        </div>
+
+        <!-- New list items -->
+        <div class="flex flex-col gap-3">
+          <div class="flex flex-row gap-5">
+            <div>
+              <i
+                class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+              ></i>
+            </div>
+            <p>Premium Quality FDA-approved, food safe wrapping paper</p>
+          </div>
+          <div class="flex flex-row gap-5">
+            <div>
+              <i
+                class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+              ></i>
+            </div>
+            <p>
+              Full-color printing (1-color, 2-color or 4-color) PMS and CMYK
+            </p>
+          </div>
+          <div class="flex flex-row gap-5">
+            <div>
+              <i
+                class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+              ></i>
+            </div>
+            <p>
+              High-Resolution Printed Graphics (unlimited, with custom layouts)
+            </p>
+          </div>
+          <div class="flex flex-row gap-5">
+            <div>
+              <i
+                class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+              ></i>
+            </div>
+            <p>
+              Custom branding (brand logo, custom phrases, QR code, printed
+              patterns)
+            </p>
+          </div>
+
+          <div class="flex flex-row gap-5">
+            <div>
+              <i
+                class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+              ></i>
+            </div>
+            <p>Fast delivery with the lowest possible turnaround time</p>
+          </div>
+          <div class="flex flex-row gap-5">
+            <div>
+              <i
+                class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+              ></i>
+            </div>
+            <p>Size variations (All Sizes available)</p>
+          </div>
+          <div class="flex flex-row gap-5">
+            <div>
+              <i
+                class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+              ></i>
+            </div>
+            <p>No Minimum order quantity</p>
+          </div>
+          <div class="flex flex-row gap-5">
+            <div>
+              <i
+                class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+              ></i>
+            </div>
+            <p>Heat, Grease, and Moisture resistant Wax Coatings</p>
+          </div>
+          <div class="flex flex-row gap-5">
+            <div>
+              <i
+                class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+              ></i>
+            </div>
+            <p>No Additional charges for the art plate and design setup</p>
+          </div>
+          <div class="flex flex-row gap-5">
+            <div>
+              <i
+                class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+              ></i>
+            </div>
+            <p>Microwave and Freezer safe custom printed wax paper</p>
+          </div>
+
+          <div class="flex flex-row gap-5">
+            <div>
+              <i
+                class="fa-solid bg-[#d3996a] text-white p-1 rounded-full fa-check"
+              ></i>
+            </div>
+            <p>Water-based inks or soy wax for durability.</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-1 md:w-1/2 h-[40vh] md:h-[400px] items-center lg:h-[500px] justify-end"
+      >
+        <img
+          src="assets/Why Wax Paper Global is Popular/Why Wax Paper Global.jpg"
+          class="rounded-2xl mx-auto md:mx-0 md:w-4/5 h-full object-contain"
+          alt="why-choose-img"
+        />
+      </div>
+    </div>
+
+    <!-- Custom-Wax-Paper-Section -->
+
+    <div
+      class="container mt-20 flex gap-10 md:gap-3 flex-col md:flex-row-reverse justify-center items-center"
+    >
+      <div class="flex w-full md:w-1/2 md:flex-1 gap-2 flex-col">
+        <div class="mb-5">
+          <p class="text-black text-3xl font-bold heading">
+            Custom Printed Wax Paper
+          </p>
+          <p class="text-[#d3996a] text-2xl font-bold">
+            Tailored for Your Brand
+          </p>
+        </div>
+
+        <p class="text-slate-400 text-justify">
+          Bring your brand's vision to life with custom, eco-friendly wax paper
+          designed exclusively for you. At Waxpaperglobal, we offer a range of
+          options in size, shape, and design to create compostable customized
+          food paper that reflect your brand's unique identity.
+        </p>
+        <p class="text-slate-400 text-justify">
+          We ensure sustainability is embedded in every product, allowing your
+          brand to make a lasting impact without compromising its core values.
+          Make a bold statement with eco-friendly, food grade wax paper sheets
+          that reinforce your commitment to quality and the planet, all while
+          showcasing your brand in the best light.
+        </p>
+        <!-- <p class="text-blue-400 underline flex gap-5 text-sm">
+          Read More
+          <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
+        </p>
+
+        <div class="flex flex-row gap-5 w-full">
+          <p
+            class="border-2 rounded-xl w-52 text-center py-2 border-[#E8862D] text-black"
+          >
+            Get a Quote
+          </p>
+
+          <p
+            class="rounded-xl w-52 text-center py-2 font-semibold text-black bg-[#E8862D]"
+          >
+            Design Wax Paper
+          </p>
+        </div> -->
+
+        <div class="help_buttons">
+          <div class="flex flex-col gap-2">
+            <i
+              class="fas fa-leaf ml-6 md:ml-2  text-xl -mb-2 text-[#d3996a]"
+            ></i>
+            <button>Eco Friendly</button>
+          </div>
+          <div class="flex flex-col gap-2">
+            <i
+              class="fas text-[#d3996a] fa-star ml-6 md:ml-2 text-xl -mb-2"
+            ></i>
+            <button>Premium Quality</button>
+          </div>
+          <div class="flex flex-col gap-2">
+            <i
+              class="fas text-[#d3996a] fa-paint-brush ml-6 md:ml-2 text-xl -mb-2"
+            ></i>
+            <button>Custom Design</button>
+          </div>
+          <div class="flex flex-col gap-2">
+            <i
+              class="fas text-[#d3996a] fa-headset ml-6 md:ml-2 text-xl -mb-2"
+            ></i>
+            <button>Support 24/7</button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex md:flex-1 md:w-1/2 h-[40vh] md:h-[400px] lg:h-[500px] justify-start"
+      >
+        <img
+          src="assets/Tailored for Your Brand/Tailored for Your Brand.jpg"
+          class="rounded-2xl mx-auto md:mx-0 h-fauto md:w-4/5 object-contain"
+          alt="why-choose-img"
+        />
+      </div>
+    </div>
+
+    <!-- Custom-Printed-Food-Section -->
+
+    <div
+      class="container my-20 mx-auto flex gap-10 md:gap-3 flex-col md:flex-row justify-center items-center"
+    >
+      <div class="flex w-full md:flex-1 gap-2 flex-col">
+        <div class="mb-5">
+          <p class="text-black text-3xl font-bold heading">
+            Your Brand's Success
+          </p>
+          <p class="text-2xl text-[#d3996a] font-bold">Our Priority</p>
+        </div>
+
+        <p class="text-gray-400">
+          We understand the bottom line matters to your business, so we offer
+          bulk discounts on our eco-friendly wholesale wax paper. Need rush
+          deliveries or shipments to multiple locations in the USA? We make it
+          easy with flexible, reliable delivery options tailored to your needs.
+          <br /><br />
+          Trust us for compostable, greaseproof, food-grade wax paper that
+          highlights your food brand's commitment to quality, hygiene, and
+          sustainability. <br /><br />
+          Get the Details That Matter: Request Your Tailored Quote Now!
+        </p>
+
+        <div class="flex flex-row mt-2 gap-5 w-full">
+          <button
+            class="border-2 rounded-xl w-52 text-center py-2 border-[#E8862D] text-black"
+          >
+            Get a Quote
+          </button>
+
+          <button
+            class="rounded-xl w-52 text-center py-2 font-semibold text-black bg-[#E8862D]"
+          >
+            Design Wax Paper
+          </button>
+        </div>
+      </div>
+
+      <div class="flex flex-1 justify-center items-center md:justify-end">
+        <div class="grid grid-cols-2 gap-4">
+          <img
+            src="assets/Your Brand's Success/1.jpg"
+            class="rounded-2xl w-[200px] h-[200px] object-cover"
+            alt="why-choose-img"
+          />
+          <img
+            src="assets/Your Brand's Success/2.jpg"
+            class="rounded-2xl w-[200px] h-[200px] object-cover"
+            alt="why-choose-img"
+          />
+          <img
+            src="assets/Your Brand's Success/3.jpg"
+            class="rounded-2xl w-[200px] h-[200px] object-cover"
+            alt="why-choose-img"
+          />
+          <img
+            src="assets/Your Brand's Success/4.jpg"
+            class="rounded-2xl w-[200px] h-[200px] object-cover"
+            alt="why-choose-img"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Print-Your-Own -->
+
+    <div class="">
+      <p class="text-black text-4xl text-center heading font-bold">
+        Print Your Own
+      </p>
+
+      <p class="text-2xl text-[#d3996a] text-center font-bold">
+        Custom Papers in All Sizes and Colors
+      </p>
+    </div>
+    <div
+      class="container mt-10 mx-auto flex gap-10 md:gap-3 flex-col md:flex-row-reverse justify-center items-center"
+    >
+      <div class="flex w-full md:flex-1 md:w-1/2 gap-2 flex-col">
+        <div class="flex flex-col justify-center items-center">
+          <p class="text-[#D3996A] text-center heading text-lg">Dimensions</p>
+          <table
+            class="border text-center"
+            style="width: 100%; table-layout: fixed"
+          >
+            <tbody>
+              <tr>
+                <th
+                  class="bg-[#E8862D] p-2 text-sm text-white"
+                  style="width: 25%"
+                >
+                  4" x 4"
+                </th>
+                <th
+                  class="bg-[#E8862D] p-2 text-sm text-white"
+                  style="width: 25%"
+                >
+                  5" x 5"
+                </th>
+                <th
+                  class="bg-[#E8862D] p-2 text-sm text-white"
+                  style="width: 25%"
+                >
+                  6" x 5"
+                </th>
+                <th
+                  class="bg-[#E8862D] p-2 text-sm text-white"
+                  style="width: 25%"
+                >
+                  6" x 6"
+                </th>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">7" x 5"</td>
+                <td class="border border-gray-300 p-2">7" x 7"</td>
+                <td class="border border-gray-300 p-2">8" x 5"</td>
+                <td class="border border-gray-300 p-2">8" x 6"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">8" x 8"</td>
+                <td class="border border-gray-300 p-2">8" x 11"</td>
+                <td class="border border-gray-300 p-2">9" x 5"</td>
+                <td class="border border-gray-300 p-2">9" x 6"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">9" x 9"</td>
+                <td class="border border-gray-300 p-2">10" x 5"</td>
+                <td class="border border-gray-300 p-2">10" x 6"</td>
+                <td class="border border-gray-300 p-2">10" x 8"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">10" x 10"</td>
+                <td class="border border-gray-300 p-2">11" x 10"</td>
+                <td class="border border-gray-300 p-2">12" x 6"</td>
+                <td class="border border-gray-300 p-2">12" x 8"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">12" x 9"</td>
+                <td class="border border-gray-300 p-2">12" x 10"</td>
+                <td class="border border-gray-300 p-2">12" x 12"</td>
+                <td class="border border-gray-300 p-2">13" x 6"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">13" x 9"</td>
+                <td class="border border-gray-300 p-2">13" x 10"</td>
+                <td class="border border-gray-300 p-2">13" x 13"</td>
+                <td class="border border-gray-300 p-2">14" x 12"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">15" x 9"</td>
+                <td class="border border-gray-300 p-2">15" x 10"</td>
+                <td class="border border-gray-300 p-2">15" x 12"</td>
+                <td class="border border-gray-300 p-2">15" x 13"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">16" x 12"</td>
+                <td class="border border-gray-300 p-2">17" x 11"</td>
+                <td class="border border-gray-300 p-2">18" x 10"</td>
+                <td class="border border-gray-300 p-2">18" x 12"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">18" x 13"</td>
+                <td class="border border-gray-300 p-2">20" x 10"</td>
+                <td class="border border-gray-300 p-2">20" x 12"</td>
+                <td class="border border-gray-300 p-2">20" x 13"</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">20" x 15"</td>
+                <td class="border border-gray-300 p-2">20" x 18"</td>
+                <td class="border border-gray-300 p-2">20" x 20"</td>
+                <td class="border border-gray-300 p-2">20" x 25"</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="flex flex-1 md:w-1/2 justify-start">
+        <img
+          src="assets/Dimension/Dimentions.jpg"
+          class="rounded-2xl md:scale-90 mx-auto md:mx-0 w-full h-full"
+          alt="why-choose-img"
+        />
+      </div>
+    </div>
+
+    <!-- Quotation-Section -->
+
+    <div class="container mt-20 rounded-2xl pb-5 bg-[#F1F1F1]">
+      <div class="mx-2 md:mx-10 py-5">
+        <p class="text-black heading text-3xl">Quotation</p>
+        <p class=" ">Get an Instant Quote</p>
+      </div>
+      <div class="bg-white mb-10 mx-2 md:mx-10">
+        <form class="space-y-6 px-4 md:px-12 py-10">
+          <!-- Name and Email Row -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-gray-700 mb-2">Name</label>
+              <input
+                type="text"
+                class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              />
+            </div>
+            <div>
+              <label class="block text-gray-700 mb-2">Email</label>
+              <input
+                type="email"
+                class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              />
+            </div>
+          </div>
+
+          <!-- Phone and Size Unit Row -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-gray-700 mb-2">Phone Number</label>
+              <input
+                type="tel"
+                class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              />
+            </div>
+            <div>
+              <label class="block text-gray-700 mb-2">Size Unit</label>
+              <select
+                class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              >
+                <option value="">Please choose an option</option>
+                <option value="inches">Inches</option>
+                <option value="cm">Centimeters</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Length and Width Row -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex gap-4">
+              <div class="w-1/2">
+                <label class="block text-gray-700 mb-2">Length</label>
+                <input
+                  type="number"
+                  class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                />
+              </div>
+              <div class="w-1/2">
+                <label class="block text-gray-700 mb-2">Width</label>
+                <input
+                  type="number"
+                  class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-gray-700 mb-2"
+                >Select the Color Option</label
+              >
+              <select
+                class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              >
+                <option value="">Select Color to Print</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Shipping and Quantity Row -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-gray-700 mb-2"
+                >Select the Shipping Option</label
+              >
+              <select
+                class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              >
+                <option value="">Please choose an option</option>
+                <option value="standard">Standard Shipping</option>
+                <option value="express">Express Shipping</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-gray-700 mb-2">Quantity</label>
+              <input
+                type="number"
+                class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              />
+            </div>
+          </div>
+
+          <!-- Other Requirements -->
+          <div class="flex flex-col md:flex-row gap-6">
+            <div class="md:w-1/2">
+              <label class="block text-gray-700 mb-2">Other Requirements</label>
+              <textarea
+                rows="4"
+                class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              ></textarea>
+            </div>
+
+            <div class="md:w-1/2 flex flex-col gap-6">
+              <div>
+                <label class="block text-gray-700 mb-2"
+                  >Upload Prototype / Sample if you have</label
+                >
+                <div class="flex items-center gap-4">
+                  <label
+                    class="cursor-pointer bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300"
+                  >
+                    Choose File
+                    <input type="file" class="hidden" />
+                  </label>
+                  <span class="text-gray-500 text-sm">No File Chosen</span>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col w-full md:flex-row gap-6">
+                <div
+                  class="bg-gray-200 flex-1 flex justify-around py-2 items-center"
+                >
+                  <div
+                    class="items-center flex justify-center items-center gap-2"
+                  >
+                    <input type="checkbox" class="w-5 h-5" /> I am not a Robot
+                  </div>
+                  <img src="assets/img/recaptcha.png" class="w-10" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="flex justify-end">
+            <button
+              type="submit"
+              class="bg-orange-400 text-white px-8 py-3 rounded-lg hover:bg-orange-500 transition-colors"
+            >
+              Submit Quote
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Customise-Section -->
+
+    <div class="container flex flex-col gap-10 mt-20 mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 text-sm lg:grid-cols-4 gap-5">
+        <div
+          class="border hover:bg-[#e8862d] hover:text-white transition-colors rounded-2xl cursor-pointer p-5"
+        >
+          <p><i class="fa-solid fa-diagram-project"></i></p>
+          <p class="font-semibold text-xl">B2B Excellence</p>
+          <p class="text-justify">
+            At Wax Paper Global, we provide B2B solutions with custom wax paper
+            tailored to your industry's needs, all through a streamlined
+            ordering process that lets you focus on business growth.
+          </p>
+        </div>
+        <div
+          class="border hover:bg-[#e8862d] hover:text-white transition-colors rounded-2xl cursor-pointer p-5"
+        >
+          <p><i class="fa-solid fa-diagram-project"></i></p>
+          <p class="font-semibold text-xl">Building Your Brand</p>
+          <p class="text-justify">
+            Custom printed food wax paper keeps your brand top of mind with
+            every bite and social media post featuring your food, ensuring
+            customers remember your brand.
+          </p>
+        </div>
+        <div
+          class="border hover:bg-[#e8862d] hover:text-white transition-colors rounded-2xl cursor-pointer p-5"
+        >
+          <p><i class="fa-solid fa-diagram-project"></i></p>
+          <p class="font-semibold text-xl">Versatile Wrapping Solutions</p>
+          <p class="text-justify">
+            Our custom wax paper is perfect for any occasion, from bakeries to
+            restaurants, food trucks, and catering, offering stylish,
+            eco-friendly packaging that keeps food fresh.
+          </p>
+        </div>
+        <div
+          class="border hover:bg-[#e8862d] hover:text-white transition-colors rounded-2xl cursor-pointer p-5"
+        >
+          <p><i class="fa-solid fa-diagram-project"></i></p>
+          <p class="font-semibold text-xl">Competitive Pricing</p>
+          <p class="text-justify">
+            We offer competitive prices that helps your brand shine, offering
+            customers delicious food and a standout experience—all at a price
+            that keeps them coming back for more.
+          </p>
+        </div>
+      </div>
+
+      <div class="p-5 rounded-2xl bg-[#f1f1f1]">
+        <div class="overflow-y-scroll h-[80vh] rounded-2xl">
+          <h2 class="text-2xl my-5 font-bold">
+            Discover the Perfect Custom Wax Paper for Your Needs
+          </h2>
+
+          <p class="text-gray-500 my-3">
+            At Wax Paper Global, we believe packaging should do more than just
+            protect, it should make an impression. Our high-quality,
+            grease-resistant, food-safe, and eco-friendly custom wax paper not
+            only preserves freshness and flavor but also showcases your brand
+            with style and sustainability.
+          </p>
+
+          <h3 class="text-2xl my-5 font-semibold">
+            Perfect for Every Occasion
+          </h3>
+          <p class="text-gray-500 my-3">
+            Whether you're serving gourmet meals, delightful desserts, or
+            on-the-go snacks, our custom wax paper is designed to cater to all
+            your packaging needs. Here are just a few ways you can use our
+            products:
+          </p>
+          <ul class="list-disc text-gray-500 list-inside">
+            <li>
+              <strong class="text-black">Bakeries:</strong> Wrap your fresh
+              pastries and cakes with a touch of elegance.
+            </li>
+            <li>
+              <strong class="text-black">Restaurants:</strong> Serve your
+              signature dishes in style with our custom printed wax paper
+              tailored for your restaurant.
+            </li>
+            <li>
+              <strong class="text-black">Food Trucks:</strong> Create a
+              memorable experience with eye-catching wax paper that keeps food
+              fresh.
+            </li>
+            <li>
+              <strong class="text-black">Catering Services:</strong> Impress
+              your clients with beautifully presented meals that maintain their
+              quality.
+            </li>
+          </ul>
+
+          <h3 class="text-2xl my-5 font-semibold">
+            How to Order Custom Wax Papers at Wax Paper Global
+          </h3>
+          <p class="text-gray-500 my-3">
+            Ordering custom wax papers is easy! Choose the option that suits
+            your needs, and our team will provide a tailored price, order
+            requirements, and delivery options.
+          </p>
+          <ul class="list-disc list-inside text-gray-500">
+            <li>
+              <strong class="text-black">Have Your Own Design?</strong> <br />
+              Complete our quote form with details like size, material, quality,
+              color options, and upload your design
+            </li>
+            <li>
+              <strong class="text-black">Want to Create a Design?</strong>
+              <br />
+              Use our user-friendly design tool to customize your wax paper.
+              Upload your logo, select layouts, explore design options, and
+              preview changes live. When satisfied, submit the form with your
+              details.
+            </li>
+          </ul>
+
+          <p class="my-4">
+            Obviously, we will create designs to match your specific needs, no
+            matter which ordering option you choose.
+          </p>
+
+          <h3 class="text-2xl my-5 font-semibold">
+            Our Varieties In Wax Papers
+          </h3>
+          <p class="text-gray-500 my-3">
+            Discover the perfect match for your food packaging needs with our
+            diverse range of customized wax papers. Whether you're looking for
+            style, functionality, or both, we've got you covered!
+          </p>
+          <ul class="list-disc list-inside">
+            <li>Custom Kraft Paper</li>
+            <li>Custom Food Paper</li>
+            <li>Custom Basket Linder Paper</li>
+            <li>Custom Cheese Paper</li>
+            <li>Custom Butcher Paper</li>
+            <li>Custom Deli Paper</li>
+            <li>Custom Parchment Paper</li>
+            <li>Custom Sandwich Paper</li>
+            <li>Custom Hot Paper</li>
+            <li>Custom Greaseproof Paper</li>
+            <li>Custom Freezer Paper</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frequently-Asked-Questions-Section -->
+
+    <div class="container mt-20 flex flex-col gap-10 md:flex-row">
+      <div class="flex flex-col gap-4 w-full md:w-1/2">
+        <p class="heading mt-3 mb-10 text-3xl">
+          Frequently Asked
+          <span class="text-[#d3996a] heading text-3xl">Questions</span>
+        </p>
+        <div class="flex gap-4">
+          <button
+            class="border-2 rounded-xl w-40 md:w-52 text-center px-1 md:px-4 py-2 border-[#E8862D] text-black"
+          >
+            Get a Quote
+          </button>
+          <button
+            class="bg-[#e8862d] w-40 md:w-52 text-center text-black px-1 md:px-4 py-2 rounded-xl"
+          >
+            Ask Another Question
+          </button>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2 flex flex-col gap-4">
+        <div class="faq-item border rounded-2xl overflow-hidden">
+          <div
+            class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
+            onclick="toggleFAQ(this)"
+          >
+            <p>Can I Update My Order After Payment?</p>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
+          </div>
+          <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
+            Absolutely! We understand plans can change, and we're here to help.
+            You can request design changes from the moment we start designing
+            until we send the final design to you for approval. You can also
+            adjust details like sheet size or type before we begin printing.
+            <br /><br />
+            We begin designing within 24 hours of your order, and printing
+            starts right after design approval. Need updates? Contact us to make
+            your project perfect!
+          </div>
+        </div>
+
+        <div class="faq-item border rounded-2xl overflow-hidden">
+          <div
+            class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
+            onclick="toggleFAQ(this)"
+          >
+            <p>Do you offer design services?</p>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
+          </div>
+          <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
+            Absolutely! We provide professional design services to bring your
+            vision to life. Whether you need a brand-new design or tweaks to an
+            existing one, our expert team is here to help. Share your ideas, and
+            we'll create something tailored just for you.
+          </div>
+        </div>
+
+        <div class="faq-item border rounded-2xl overflow-hidden">
+          <div
+            class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
+            onclick="toggleFAQ(this)"
+          >
+            <p>How Do I Place an Order?</p>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
+          </div>
+          <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
+            Placing an order is easy: <br />
+            <strong>Submit Your Design:</strong> Upload your design requirements
+            or use our design tool to customize your wax paper. <br />
+            <strong>Get a Quote:</strong> We'll send you a tailored price and
+            order details for approval. <br />
+            <strong>Approve and Proceed:</strong> Once approved, we'll start
+            production and arrange delivery. <br />
+          </div>
+        </div>
+
+        <div class="faq-item border rounded-2xl overflow-hidden">
+          <div
+            class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
+            onclick="toggleFAQ(this)"
+          >
+            <p>Will I need to approve my artwork before it's printed?</p>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
+          </div>
+          <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
+            You got it right! We'll send you a proof of your artwork for
+            approval before printing begins. This ensures everything meets your
+            expectations and allows for any final adjustments. Your order won't
+            move to production until you're completely satisfied!
+          </div>
+        </div>
+
+        <div class="faq-item border rounded-2xl overflow-hidden">
+          <div
+            class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
+            onclick="toggleFAQ(this)"
+          >
+            <p>Where can I buy Custom Wax Paper?</p>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
+          </div>
+          <div class="faq-answer px-10 py-4 bg-gray-50 duration-300 hidden">
+            You can buy custom wax paper directly from us at
+            <strong>Wax Paper Global!</strong> We specialize in creating
+            high-quality, custom-printed wax paper, tailored specifically for
+            food brands. Simply visit our website to choose your preferred size,
+            material, and design options, or contact our team for help in
+            creating the perfect custom design for your needs.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Client-Section -->
+    <!-- <div class="container mx-auto my-20">
+      <p class="text-3xl heading mb-10">
+        What Our <span class="text-[#D3996A] heading">Client</span> Say About Us
+      </p>
+
+      <div class="splide" role="group" aria-label="Client Testimonials">
+        <div class="splide__track mx-7 md:mx-20">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="testimonial-card">
+                <div class="flex gap-4 items-center mb-4">
+                  <img
+                    src="assets/img/male.png"
+                    class="w-20 h-20 rounded-full"
+                    alt="client-img"
+                  />
+                  <div>
+                    <p class="font-semibold">Alex Smith</p>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, quos. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+                <p class="testimonial-date">10:06 AM - Feb 2, 2024</p>
+              </div>
+            </li>
+
+            <li class="splide__slide">
+              <div class="testimonial-card">
+                <div class="flex gap-4 items-center mb-4">
+                  <img
+                    src="assets/img/male.png"
+                    class="w-20 h-20 rounded-full"
+                    alt="client-img"
+                  />
+                  <div>
+                    <p class="font-semibold">John Doe</p>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, quos. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+                <p class="testimonial-date">11:30 AM - Feb 3, 2024</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="testimonial-card">
+                <div class="flex gap-4 items-center mb-4">
+                  <img
+                    src="assets/img/male.png"
+                    class="w-20 h-20 rounded-full"
+                    alt="client-img"
+                  />
+                  <div>
+                    <p class="font-semibold">John Doe</p>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, quos. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+                <p class="testimonial-date">11:30 AM - Feb 3, 2024</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="testimonial-card">
+                <div class="flex gap-4 items-center mb-4">
+                  <img
+                    src="assets/img/male.png"
+                    class="w-20 h-20 rounded-full"
+                    alt="client-img"
+                  />
+                  <div>
+                    <p class="font-semibold">John Doe</p>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="testimonial-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam, quos. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+                <p class="testimonial-date">11:30 AM - Feb 3, 2024</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Best-Selling-Product-Section -->
+    <div class="container mt-20 mx-auto">
+      <p class="text-[#D3996A] text-3xl font-bold heading">
+        <span class="text-black heading text-3xl">Best Selling</span> Product
+      </p>
+      <div
+        class="flex my-5 gap-5 flex-col md:flex-row-reverse justify-center items-center"
+      >
+        <div class="flex flex-1 justify-around">
+          <div class="grid grid-cols-2 gap-10 w-full">
+            <div class="flex flex-col gap-2">
+              <div class="h-40 w-full relative group">
+                <img
+                  src="assets/Best Selling Products/1-Custom Greaseproof Paper.jpg"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Single-Product.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Product</span
+                  >
+                </a>
+              </div>
+              <p class="text-gray-400">Custom Wax Paper</p>
+              <button
+                class="border-2 rounded-xl w-32 text-center py-1 border-[#E8862D] text-black"
+              >
+                Get a Quote
+              </button>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="h-40 w-full relative group">
+                <img
+                  src="assets/Best Selling Products/2-Custom Hot Paper.jpg"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Single-Product.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Product</span
+                  >
+                </a>
+              </div>
+              <p class="text-gray-400">Custom Wax Paper</p>
+              <button
+                class="border-2 rounded-xl w-32 text-center py-1 border-[#E8862D] text-black"
+              >
+                Get a Quote
+              </button>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="h-40 w-full relative group">
+                <img
+                  src="assets/Best Selling Products/3-Custom Kraft Paper.jpg"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Single-Product.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Product</span
+                  >
+                </a>
+              </div>
+              <p class="text-gray-400">Custom Wax Paper</p>
+              <button
+                class="border-2 rounded-xl w-32 text-center py-1 border-[#E8862D] text-black"
+              >
+                Get a Quote
+              </button>
+            </div>
+            <div class="flex flex-col gap-2">
+              <div class="h-40 w-full relative group">
+                <img
+                  src="assets/Best Selling Products/4- Custom Basket Line.jpg"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Single-Product.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Product</span
+                  >
+                </a>
+              </div>
+              <p class="text-gray-400">Custom Wax Paper</p>
+              <button
+                class="border-2 rounded-xl w-32 text-center py-1 border-[#E8862D] text-black"
+              >
+                Get a Quote
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-1 gap-2 flex-col md:w-[40%] my-5 justify-start">
+          <img
+            src="assets/Best Selling Products/Main Large-Custom Deli Paper.jpg"
+            class="rounded-2xl w-full md:w-4/5"
+            alt="why-choose-img"
+          />
+          <div class="flex items-center gap-2">
+            <button
+              class="border-2 rounded-xl w-32 text-center py-1 border-[#E8862D] text-black"
+            >
+              Get a Quote
+            </button>
+            <p class="text-gray-400">Custom Wax Paper</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map-Section -->
+    <div class="container mx-auto mt-20">
+      <div class="flex flex-col gap-5">
+        <div class="flex flex-col gap-10 md:gap-2 md:flex-row">
+          <div class="flex md:w-1/2 flex-col gap-2">
+            <h2 class="text-3xl heading">
+              Wax Paper
+              <span class="text-[#D3996A] heading text-3xl">Global</span>
+            </h2>
+            <p class="mt-2 text-2xl">
+              285 Nostrand Ave Unit #120 Brooklyn, NY 11216
+            </p>
+            <p class="text-2xl">sales@waxpapers.net</p>
+            <p class="text-gray-400">888-836-3696</p>
+
+            <div>
+              <button
+                class="border-2 rounded-xl w-32 text-center py-1 border-[#E8862D] text-black"
+              >
+                Get a Quote
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full rounded-2xl overflow-hidden h-[400px] shadow-lg">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.437469493098!2d-73.95126362426955!3d40.68911663883615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b8f8c3d4e5b%3A0x1c3b9d24bb5f6b6a!2s285%20Nostrand%20Ave%2C%20Brooklyn%2C%20NY%2011216!5e0!3m2!1sen!2sus!4v1709825037316!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest Articles  -->
+
+    <div class="container mt-20 mx-auto">
+      <p class="text-3xl font-bold heading">
+        Latest Articles and <span class="text-[#D3996A] heading">Blogs</span>
+      </p>
+      <div
+        class="flex my-5 gap-5 flex-col md:flex-row justify-center items-center"
+      >
+        <div class="flex flex-1 justify-center items-center">
+          <div class="flex flex-col gap-5 w-full">
+            <!-- First Article -->
+            <div class="flex flex-col gap-2">
+              <div class="h-[230px] w-full relative group">
+                <img
+                  src="assets/img/latest.png"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Blogs.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Blog</span
+                  >
+                </a>
+              </div>
+              <p class="font-bold text-xl">How to provide insights</p>
+              <p class="text-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quaerat quo laboriosa.
+              </p>
+            </div>
+
+            <!-- Second Article -->
+            <div class="flex flex-col gap-2">
+              <div class="h-[230px] w-full relative group">
+                <img
+                  src="assets/img/latest.png"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Blogs.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Blog</span
+                  >
+                </a>
+              </div>
+              <p class="font-bold text-xl">How to provide insights</p>
+              <p class="text-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quaerat quo laboriosa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-1 justify-center items-center">
+          <div class="flex flex-col gap-5 w-full">
+            <!-- Third Article -->
+            <div class="flex flex-col gap-2">
+              <div class="h-[230px] w-full relative group">
+                <img
+                  src="assets/img/latest.png"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Blogs.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Blog</span
+                  >
+                </a>
+              </div>
+              <p class="font-bold text-xl">How to provide insights</p>
+              <p class="text-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quaerat quo laboriosa.
+              </p>
+            </div>
+
+            <!-- Fourth Article -->
+            <div class="flex flex-col gap-2">
+              <div class="h-[230px] w-full relative group">
+                <img
+                  src="assets/img/latest.png"
+                  class="rounded-2xl w-full h-full object-cover"
+                  alt="why-choose-img"
+                />
+                <a
+                  href="Blogs.html"
+                  class="absolute inset-0 bg-black/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                >
+                  <span
+                    class="font-semibold bg-[#e8862d] px-4 py-2 rounded-2xl text-[#123636]"
+                    >View Blog</span
+                  >
+                </a>
+              </div>
+              <p class="font-bold text-xl">How to provide insights</p>
+              <p class="text-sm">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quaerat quo laboriosa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-Section -->
+    <div class="bg-[#123636]">
+      <div class="flex flex-col gap-10 md:gap-0 py-20 md:flex-row">
+        <div
+          class="flex justify-center items-start md:w-1/3 w-full flex-col gap-5 px-5 text-[#d3996a]"
+        >
+          <div class="flex items-start gap-2">
+            <img
+              src="assets/img/Logo/Footer Logo.png"
+              class="scale-90"
+              alt="Logo"
+            />
+            <!-- <p class="text-3xl heading text-[#d3996a]">Wax Paper</p> -->
+          </div>
+          <p class="text-justify">
+            We are trusted custom wax paper printing company, dedicated to
+            delivering high-quality products and creative designs from concept
+            to creation. Serving top brands across the USA
+          </p>
+          <div>
+            <button
+              class="w-52 bg-[#e8862d] text-[#123636] rounded-lg py-1 text-center text-lg"
+            >
+              Get a Quote
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="md:w-1/3 flex items-center px-5 md:justify-center text-[#d3996a] w-full"
+        >
+          <ul class="flex flex-col text-lg gap-2">
+            <li><a href="#"> Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Get a Quote</a></li>
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">User Guide</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div
+          class="md:w-1/3 flex items-center px-5 md:justify-center text-[#d3996a] w-full"
+        >
+          <ul class="flex flex-col text-lg gap-2">
+            <li>888-836-3696</li>
+            <li>sales@waxpapers.net</li>
+            <li>285 NOSTRAND</li>
+            <li>AVE UNIT #120</li>
+            <li>BROOKLYN, NY 11216</li>
+
+            <li class="text-center text-2xl font-bold">Follow</li>
+
+            <li class="flex gap-5">
+              <a href="#"> <i class="fa-brands text-3xl fa-facebook"></i> </a
+              ><a href="#"> <i class="fa-brands text-3xl fa-instagram"></i> </a
+              ><a href="#"> <i class="fa-brands text-3xl fa-linkedin"></i> </a
+              ><a href="#">
+                <i class="fa-brands fa-twitter text-3xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      #mainImage {
+        transition: opacity 0.3s ease-in-out;
+      }
+    </style>
+  </body>
+</html>

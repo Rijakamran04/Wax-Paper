@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="assets/img/favicon.png" />
+    <link rel="stylesheet" href="assets/CSS/Style.css" />
+    <script src="assets/Javascript/java.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <title>Wax Paper</title>
+  </head>
+  <body>
+    <div class="flex text-[#d3996a] bg-[#123636] h-16 px-2 relative">
+      <div class="flex flex-1 text-center justify-center items-center">
+        Free Shipping all over USA
+      </div>
+      <div class="flex flex-row items-center md:absolute gap-2 top-2 right-0">
+        <i class="fa-solid fa-bag-shopping text-4xl"></i>
+        <div class="flex flex-col gap-0 md:mr-8">
+          <span class="m-0 p-0">11+</span>
+          <span class="m-0 p-0">Products</span>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar-Section -->
+    <div class="container py-2">
+      <div class="flex flex-row justify-between items-center">
+        <div>
+          <img src="assets/img/logo.png" class="w-40" alt="logo" />
+        </div>
+        <div>
+          <ul class="flex flex-row font-semibold gap-8 hidden md:flex text-lg">
+            <a href="index.html">
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Home
+              </li>
+            </a>
+            <a href="Single-Product.html">
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Product
+              </li>
+            </a>
+            <a href="Blogs.html">
+              <li class="text-[#d3996a] duration-300">Blogs</li>
+            </a>
+            <a href="Contact.html">
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Contact Us
+              </li>
+            </a>
+          </ul>
+        </div>
+
+        <div>
+          <p
+            class="bg-[#123636] hidden md:flex text-[#d3996a] px-4 py-3 rounded-xl"
+          >
+            Get a Quote
+          </p>
+        </div>
+
+        <div class="flex md:hidden">
+          <i
+            class="fa-solid text-3xl fa-bars cursor-pointer"
+            onclick="toggleSidebar()"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add this sidebar right after the navbar section -->
+    <div
+      id="sidebar"
+      class="fixed top-0 right-0 h-full w-64 bg-[#123636] transform translate-x-full transition-transform duration-300 ease-in-out z-50"
+    >
+      <div
+        class="flex justify-between text-[#d3996a] items-center p-4 border-b border-[#d3996a]"
+      >
+        <h2 class="text-xl">Menu</h2>
+        <i
+          class="fa-solid text-[#d3996a] fa-times text-2xl cursor-pointer"
+          onclick="toggleSidebar()"
+        ></i>
+      </div>
+      <ul class="flex text-[#d3996a] flex-col p-4 gap-4">
+        <a href="index.html">
+          <li class="">Home</li>
+        </a>
+        <a href="Single-Product.html">
+          <li class="">Product</li>
+        </a>
+        <a href="Blogs.html">
+          <li class="">Blogs</li>
+        </a>
+        <a href="Contact.html">
+          <li class="">Contact Us</li>
+        </a>
+        <li class="cursor-pointer">Get a Quote</li>
+      </ul>
+    </div>
+
+    <!-- Add this overlay div right after the sidebar -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black opacity-50 hidden z-40"
+      onclick="toggleSidebar()"
+    ></div>
+
+    <!-- Header Section  -->
+
+    <div class="container mx-auto my-20">
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <h1 class="text-3xl text-black text-center heading">
+          Our Blogs & Articles
+        </h1>
+        <p class="text-black w-[90%] lg:w-[65%] 2xl:w-[50%] text-center">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+          sit ut quibusdam rerum nesciunt illo voluptas aliquam excepturi
+          dolorum.
+        </p>
+
+        <div
+          class="flex flex-row overflow-hidden justify-center items-center gap-2 border border-black rounded-xl"
+        >
+          <input
+            type="text"
+            class="p-2 outline-none w-80"
+            placeholder="Search Blogs here..."
+          />
+          <i
+            class="fa-solid p-4 fa-magnifying-glass text-white bg-[#d3996a]"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs Section -->
+    <div class="container mx-auto my-20">
+      <div
+        class="flex flex-row justify-between px-2 md:px-20 items-center md:gap-8 gap-0 border-b border-gray-200"
+      >
+        <button
+          class="px-4 py-2 text-lg bo font-medium border-b-2 border-[#d3996a] -mb-[1px]"
+        >
+          All Categories
+        </button>
+        <button
+          class="px-4 py-2 text-lg font-medium hover:border-b-2 hover:border-[#d3996a] -mb-[1px] transition-all"
+        >
+          Custom Tissues
+        </button>
+        <button
+          class="px-4 py-2 text-lg font-medium hover:border-b-2 hover:border-[#d3996a] -mb-[1px] transition-all"
+        >
+          Simple Paper
+        </button>
+        <button
+          class="px-4 py-2 text-lg font-medium hover:border-b-2 hover:border-[#d3996a] -mb-[1px] transition-all"
+        >
+          Wax Papers
+        </button>
+
+        <button>
+          <i
+            class="fa-solid fa-arrow-right text-white bg-[#d3996a] px-3 py-1 rounded-lg"
+          ></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Design Wax Paper -->
+    <div class="container gap-10 flex flex-col md:flex-row mx-auto my-20">
+      <div class="flex flex-1 md:w-[50%]">
+        <img src="assets/img/blog.jpg" class="rounded-2xl" alt="wax-paper" />
+      </div>
+
+      <div class="flex flex-1 md:w-[50%]">
+        <div class="flex flex-col justify-around gap-5 md:gap-0">
+          <p
+            class="border-2 rounded-lg text-sm w-40 text-center py-1 border-[#E8862D] text-black"
+          >
+            Custom Tissue Paper
+          </p>
+
+          <p class="text-black heading text-3xl">
+            How to Desing Custom Wax Paper According to the Clients Requirments
+            and deliver the product.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat a
+            ea vitae ipsa laborum placeat quos labore ratione reiciendis
+            commodi. Ullam, soluta repudiandae minus dolore sequi, tempore
+            asperiores placeat voluptates minima nobis eum beatae culpa ipsa!
+            Cumque, esse at! Molestias!
+          </p>
+          <a href="Single-Blog.html">
+            <p class="flex flex-row gap-2 text-blue-400 items-center">
+              Read More <i class="fa-solid fa-arrow-right"></i>
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blogs-Section -->
+    <div class="container mx-auto my-20 flex flex-col md:flex-row">
+      <div class="grid w-full md:w-[60%] gap-5 grid-cols-1 md:grid-cols-2">
+        <div>
+          <img
+            src="assets/img/latest.png"
+            class="rounded-2xl"
+            alt="wax-paper"
+          />
+
+          <p class="text-black text-lg">
+            How to provide team insights to the clients
+          </p>
+          <p class="text-gray-400 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            rerum!
+          </p>
+          <p class="text-blue-400 underline">
+            <a href="Single-Blog.html"> Read More </a>
+          </p>
+        </div>
+        <div>
+          <img
+            src="assets/img/latest.png"
+            class="rounded-2xl"
+            alt="wax-paper"
+          />
+
+          <p class="text-black text-lg">
+            How to provide team insights to the clients
+          </p>
+          <p class="text-gray-400 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            rerum!
+          </p>
+          <p class="text-blue-400 underline">
+            <a href="Single-Blog.html"> Read More </a>
+          </p>
+        </div>
+        <div>
+          <img
+            src="assets/img/latest.png"
+            class="rounded-2xl"
+            alt="wax-paper"
+          />
+
+          <p class="text-black text-lg">
+            How to provide team insights to the clients
+          </p>
+          <p class="text-gray-400 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            rerum!
+          </p>
+          <p class="text-blue-400 underline">
+            <a href="Single-Blog.html"> Read More </a>
+          </p>
+        </div>
+        <div>
+          <img
+            src="assets/img/latest.png"
+            class="rounded-2xl"
+            alt="wax-paper"
+          />
+
+          <p class="text-black text-lg">
+            How to provide team insights to the clients
+          </p>
+          <p class="text-gray-400 text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            rerum!
+          </p>
+          <p class="text-blue-400 underline">
+            <a href="Single-Blog.html"> Read More </a>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex gap-5 px-10 w-full md:w-[40%] flex-col justify-center items-center"
+      >
+        <div
+          class="flex p-5 w-full rounded-2xl bg-[#f1f1f1] flex-col justify-between items-start"
+        >
+          <p class="text-black text-lg heading my-2">Recent Posts</p>
+          <div class="flex flex-col gap-2 ml-3 overflow-y-scroll h-[60vh]">
+            <div class="flex flex-row gap-5">
+              <img
+                src="assets/img/latest.png"
+                class="rounded-lg w-20 h-20"
+                alt="wax-paper"
+              />
+              <div
+                class="flex flex-col gap-0 justify-center gap-2 items-start text-start"
+              >
+                <p class="text-sm text-gray-400">Wax Paper</p>
+                <p class="font-bold">How to Design Custom Wax Paper</p>
+              </div>
+            </div>
+            <div class="flex flex-row gap-5">
+              <img
+                src="assets/img/latest.png"
+                class="rounded-lg w-20 h-20"
+                alt="wax-paper"
+              />
+              <div
+                class="flex flex-col gap-0 justify-center gap-2 items-start text-start"
+              >
+                <p class="text-sm text-gray-400">Wax Paper</p>
+                <p class="font-bold">How to Design Custom Wax Paper</p>
+              </div>
+            </div>
+            <div class="flex flex-row gap-5">
+              <img
+                src="assets/img/latest.png"
+                class="rounded-lg w-20 h-20"
+                alt="wax-paper"
+              />
+              <div
+                class="flex flex-col gap-0 justify-center gap-2 items-start text-start"
+              >
+                <p class="text-sm text-gray-400">Wax Paper</p>
+                <p class="font-bold">How to Design Custom Wax Paper</p>
+              </div>
+            </div>
+            <div class="flex flex-row gap-5">
+              <img
+                src="assets/img/latest.png"
+                class="rounded-lg w-20 h-20"
+                alt="wax-paper"
+              />
+              <div
+                class="flex flex-col gap-0 justify-center gap-2 items-start text-start"
+              >
+                <p class="text-sm text-gray-400">Wax Paper</p>
+                <p class="font-bold">How to Design Custom Wax Paper</p>
+              </div>
+            </div>
+            <div class="flex flex-row gap-5">
+              <img
+                src="assets/img/latest.png"
+                class="rounded-lg w-20 h-20"
+                alt="wax-paper"
+              />
+              <div
+                class="flex flex-col gap-0 justify-center gap-2 items-start text-start"
+              >
+                <p class="text-sm text-gray-400">Wax Paper</p>
+                <p class="font-bold">How to Design Custom Wax Paper</p>
+              </div>
+            </div>
+            <div class="flex flex-row gap-5">
+              <img
+                src="assets/img/latest.png"
+                class="rounded-lg w-20 h-20"
+                alt="wax-paper"
+              />
+              <div
+                class="flex flex-col gap-0 justify-center gap-2 items-start text-start"
+              >
+                <p class="text-sm text-gray-400">Wax Paper</p>
+                <p class="font-bold">How to Design Custom Wax Paper</p>
+              </div>
+            </div>
+            <div class="flex flex-row gap-5">
+              <img
+                src="assets/img/latest.png"
+                class="rounded-lg w-20 h-20"
+                alt="wax-paper"
+              />
+              <div
+                class="flex flex-col gap-0 justify-center gap-2 items-start text-start"
+              >
+                <p class="text-sm text-gray-400">Wax Paper</p>
+                <p class="font-bold">How to Design Custom Wax Paper</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex p-5 w-full rounded-2xl bg-[#f1f1f1] flex-col justify-between items-start"
+        >
+          <p class="font-bold heading text-lg">Tags</p>
+
+          <div class="flex flex-col text-gray-400 gap-2 w-full">
+            <div class="flex w-full justify-around">
+              <div>Paper</div>
+              <div>Custom Wax Paper</div>
+            </div>
+            <div class="flex w-full justify-around">
+              <div>Paper</div>
+              <div>Custom Wax Paper</div>
+            </div>
+            <div class="flex w-full justify-around">
+              <div>Paper</div>
+              <div>Custom Wax Paper</div>
+            </div>
+            <div class="flex w-full justify-around">
+              <div>Paper</div>
+              <div>Custom Wax Paper</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex p-5 w-full rounded-2xl bg-[#f1f1f1] justify-between items-start"
+        >
+          <div class="font-bold heading text-lg">Social Media</div>
+          <div class="flex flex-row gap-2">
+            <i class="fa-brands text-2xl fa-facebook"></i>
+            <i class="fa-brands text-2xl fa-instagram"></i>
+            <i class="fa-brands text-2xl fa-twitter"></i>
+            <i class="fa-brands text-2xl fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOoter-Section -->
+    <div class="bg-[#123636]">
+      <div class="flex flex-col gap-10 md:gap-0 py-20 md:flex-row">
+        <div
+          class="flex justify-center items-center md:w-1/3 w-full flex-col gap-5 px-5 text-[#d3996a]"
+        >
+          <div class="flex items-center gap-2">
+            <img src="assets/img/Logo/Logo.png" class="h-32" alt="Logo" />
+            <p class="text-3xl heading text-[#d3996a]">Wax Paper</p>
+          </div>
+          <p class="text-justify">
+            We are an experienced custom paper printing company working in
+            collaboration with the leading brands globally. With beautiful
+            designs and the best quality, we manufacture greatness.
+          </p>
+          <div>
+            <div
+              class="w-52 bg-[#e8862d] text-[#123636] rounded-lg py-1 text-center text-lg"
+            >
+              Get a Quote
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="md:w-1/3 flex items-center px-5 md:justify-center text-[#d3996a] w-full"
+        >
+          <ul class="flex flex-col text-lg gap-2">
+            <li><a href="#"> Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Get a Quote</a></li>
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">User Guide</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div
+          class="md:w-1/3 flex items-center px-5 md:justify-center text-[#d3996a] w-full"
+        >
+          <ul class="flex flex-col text-lg gap-2">
+            <li>888-836-3696</li>
+            <li>sales@waxpapers.net</li>
+            <li>285 NOSTRAND</li>
+            <li>AVE UNIT #120</li>
+            <li>BROOKLYN, NY 11216</li>
+
+            <li class="text-center text-2xl font-bold">Follow</li>
+
+            <li class="flex gap-5">
+              <a href="#"> <i class="fa-brands text-3xl fa-facebook"></i> </a
+              ><a href="#"> <i class="fa-brands text-3xl fa-instagram"></i> </a
+              ><a href="#"> <i class="fa-brands text-3xl fa-linkedin"></i> </a
+              ><a href="#">
+                <i class="fa-brands fa-twitter text-3xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
