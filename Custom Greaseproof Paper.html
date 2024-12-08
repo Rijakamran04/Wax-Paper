@@ -38,7 +38,9 @@
     <div class="container sticky top-16 z-50 bg-white py-2">
       <div class="flex flex-row justify-between items-center">
         <div>
+          <a href="index.html">
           <img src="assets/img/logo.png" class="w-40" alt="logo" />
+          </a>
         </div>
         <div>
           <ul class="flex flex-row font-semibold gap-8 hidden md:flex text-lg">
@@ -189,6 +191,7 @@
                 >
                   <option value="">Please choose an option</option>
                   <option value="inches">Inches</option>
+                  <option value="mm">Millimeters</option>
                   <option value="cm">Centimeters</option>
                 </select>
               </div>
@@ -215,15 +218,15 @@
 
               <div>
                 <label class="block text-gray-700 mb-2"
-                  >Select the Shipping Option</label
+                  >Select the Color Print Option</label
                 >
                 <select
                   class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 >
-                  <option value="">Select Color to Print</option>
-                  <option value="standard">1 Color</option>
-                  <option value="express">2 Color</option>
-                  <option value="express">4 Color</option>
+                <option value="">Select Color to Print</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="brown">Brown</option>
                 </select>
               </div>
             </div>
@@ -237,9 +240,10 @@
                 <select
                   class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 >
-                  <option value="">Please choose an option</option>
-                  <option value="standard">Standard Shipping</option>
-                  <option value="express">Express Shipping</option>
+                <option value="">Please choose an option</option>
+                <option value="standard">Standard(1-3 Months)</option>
+                <option value="express">Express(Less than 1 Month)</option>
+                <option value="urgent">Urgent(6-8 Days)</option>
                 </select>
               </div>
               <div>
