@@ -100,3 +100,23 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll;
 });
 
+function toggleDropdown() {
+  const dropdown = document.getElementById("productsDropdown");
+  dropdown.classList.toggle("hidden");
+}
+
+// Show the button when the user scrolls down 300px
+window.onscroll = function () {
+  let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    scrollToTopBtn.classList.add("show");
+  } else {
+    scrollToTopBtn.classList.remove("show");
+  }
+};
+
+// Scroll to top function
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+

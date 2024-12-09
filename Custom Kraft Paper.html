@@ -32,28 +32,51 @@
         </div>
       </div>
     </div>
-    <!-- Navbar-Section -->
-    <div class="container sticky top-16 z-50 bg-white py-2">
+     <!-- Navbar-Section -->
+     <div class="container py-2">
       <div class="flex flex-row justify-between items-center">
+        <!-- Logo Section -->
         <div>
           <a href="index.html">
             <img src="assets/img/logo.png" class="w-40" alt="logo" />
-            </a>
+          </a>
         </div>
+    
+        <!-- Links Section -->
         <div>
           <ul class="flex flex-row font-semibold gap-8 hidden md:flex text-lg">
             <a href="index.html">
-              <li class="hover:text-[#d3996a] ease-in-out duration-300">
-                Home
-              </li>
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">Home</li>
             </a>
-            <a href="Single-Product.html">
-              <li class="text-[#d3996a]">Product</li>
-            </a>
+    
+            <!-- Products Dropdown -->
+            <li class="relative group">
+              <a
+                href="Single-Product.html"
+                class="text-[#d3996a] hover:text-[#d3996a] ease-in-out duration-300"
+              >
+                Products
+              </a>
+              <!-- Dropdown Menu -->
+              <ul
+                class="absolute left-0 top-full bg-[#123636] text-[#d3996a] hidden group-hover:flex flex-col gap-2 py-3 px-5 shadow-lg z-50 min-w-max"
+              >
+                <li class="hover:text-white text-base"><a href="Custom Deli Paper.html">Custom Deli Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Butcher Paper.html">Custom Butcher Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Kraft Paper.html">Custom Kraft Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Parchment Paper.html">Custom Parchment Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Greaseproof Paper.html">Custom Greaseproof Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Sandwich Paper.html">Custom Sandwich Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Cheese Paper.html">Custom Cheese Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Basket Liner.html">Custom Basket Liner</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Freezer Paper.html">Custom Freezer Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Food Paper.html">Custom Food Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Hot Paper.html">Custom Hot Paper</a></li>
+              </ul>
+            </li>
+    
             <a href="Blogs.html">
-              <li class="hover:text-[#d3996a] ease-in-out duration-300">
-                Blogs
-              </li>
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">Blogs</li>
             </a>
             <a href="Contact.html">
               <li class="hover:text-[#d3996a] ease-in-out duration-300">
@@ -62,15 +85,15 @@
             </a>
           </ul>
         </div>
-
+    
+        <!-- Quote Button Section -->
         <div>
-          <p
-            class="bg-[#123636] hidden md:flex text-[#d3996a] px-4 py-3 rounded-xl"
-          >
+          <p class="bg-[#123636] hidden md:flex text-[#d3996a] px-4 py-3 rounded-xl">
             Get a Quote
           </p>
         </div>
-
+    
+        <!-- Mobile Menu Icon -->
         <div class="flex md:hidden">
           <i
             class="fa-solid text-3xl fa-bars cursor-pointer"
@@ -79,44 +102,91 @@
         </div>
       </div>
     </div>
-
     <!-- Add this sidebar right after the navbar section -->
     <div
-      id="sidebar"
-      class="fixed top-0 right-0 h-full w-64 bg-[#123636] transform translate-x-full transition-transform duration-300 ease-in-out z-50"
-    >
-      <div
-        class="flex justify-between text-[#d3996a] items-center p-4 border-b border-[#d3996a]"
-      >
-        <h2 class="text-xl">Menu</h2>
-        <i
-          class="fa-solid text-[#d3996a] fa-times text-2xl cursor-pointer"
-          onclick="toggleSidebar()"
-        ></i>
-      </div>
-      <ul class="flex text-[#d3996a] flex-col p-4 gap-4">
-        <a href="index.html">
-          <li>Home</li>
-        </a>
-        <a href="Single-Product.html">
-          <li>Product</li>
-        </a>
-        <a href="Blogs.html">
-          <li>Blogs</li>
-        </a>
-        <a href="Contact.html">
-          <li>Contact Us</li>
-        </a>
-        <li class="cursor-pointer">Get a Quote</li>
-      </ul>
-    </div>
-
-    <!-- Add this overlay div right after the sidebar -->
+    id="sidebar"
+    class="fixed top-0 right-0 h-full w-64 bg-[#123636] transform translate-x-full transition-transform duration-300 ease-in-out z-50"
+  >
     <div
-      id="overlay"
-      class="fixed inset-0 bg-black opacity-50 hidden z-40"
-      onclick="toggleSidebar()"
-    ></div>
+      class="flex justify-between text-[#d3996a] items-center p-4 border-b border-[#d3996a]"
+    >
+      <h2 class="text-xl">Menu</h2>
+      <i
+        class="fa-solid text-[#d3996a] fa-times text-2xl cursor-pointer"
+        onclick="toggleSidebar()"
+      ></i>
+    </div>
+    <ul class="flex text-[#d3996a] flex-col p-4 gap-4">
+      <a href="index.html">
+        <li>Home</li>
+      </a>
+  
+      <!-- Products with Dropdown -->
+      <li class="relative">
+        <div
+          class="cursor-pointer flex justify-between items-center"
+          onclick="toggleDropdown()"
+        >
+          <span>Products</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <ul
+          id="productsDropdown"
+          class="hidden flex-col gap-2 bg-[#1a4545] p-2 mt-2 rounded-md"
+        >
+          <li class="hover:text-white">
+            <a href="Custom Deli Paper.html">Custom Deli Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Butcher Paper.html">Custom Butcher Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Kraft Paper.html">Custom Kraft Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Parchment Paper.html">Custom Parchment Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Greaseproof Paper.html">Custom Greaseproof Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Sandwich Paper.html">Custom Sandwich Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Cheese Paper.html">Custom Cheese Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Basket Liner.html">Custom Basket Liner</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Freezer Paper.html">Custom Freezer Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Food Paper.html">Custom Food Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Hot Paper.html">Custom Hot Paper</a>
+          </li>
+        </ul>
+      </li>
+  
+      <a href="Blogs.html">
+        <li>Blogs</li>
+      </a>
+      <a href="Contact.html">
+        <li>Contact Us</li>
+      </a>
+      <li class="cursor-pointer">Get a Quote</li>
+    </ul>
+  </div>
+  
+  <!-- Overlay -->
+  <div
+    id="overlay"
+    class="fixed inset-0 bg-black opacity-50 hidden z-40"
+    onclick="toggleSidebar()"
+  ></div>
+  
 
     <!-- Custom Printed Tissue -->
 
@@ -129,25 +199,25 @@
         <div class="flex flex-col gap-5">
           <div class="h-[300px] md:h-[500px] overflow-hidden rounded-2xl">
             <img
-              src="assets/Custom Kraft Paper/1.png"
+              src="assets/Custom Kraft Paper/Webp/1.webp"
               class="rounded-2xl w-full h-full object-contain"
             />
           </div>
           <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
             <img
-              src="assets/Custom Kraft Paper/2.png"
+              src="assets/Custom Kraft Paper/Webp/2.webp"
               class="w-36 mx-auto bg-[#123636] rounded-2xl h-28"
             />
             <img
-              src="assets/Custom Kraft Paper/3.png"
+              src="assets/Custom Kraft Paper/Webp/3.webp"
               class="w-36 mx-auto bg-[#123636] rounded-2xl h-28"
             />
             <img
-              src="assets/Custom Kraft Paper/4.png"
+              src="assets/Custom Kraft Paper/Webp/4.webp"
               class="w-36 mx-auto bg-[#123636] rounded-2xl h-28"
             />
             <img
-              src="assets/Custom Kraft Paper/5.png"
+              src="assets/Custom Kraft Paper/Webp/5.webp"
               class="w-36 mx-auto bg-[#123636] rounded-2xl h-28"
             />
           </div>
@@ -172,7 +242,7 @@
                 />
               </div>
             </div>
-
+        
             <!-- Phone and Size Unit Row -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
@@ -194,7 +264,7 @@
                 </select>
               </div>
             </div>
-
+        
             <!-- Length and Width Row -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="flex gap-4">
@@ -213,37 +283,35 @@
                   />
                 </div>
               </div>
-
+        
+              <!-- Select Color Print Option -->
               <div>
-                <label class="block text-gray-700 mb-2"
-                  >Select the Color Print Option</label
-                >
+                <label class="block text-gray-700 mb-2">Select Color Print Option</label>
                 <select
                   class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 >
-                <option value="">Select Color to Print</option>
-                <option value="white">White</option>
-                <option value="black">Black</option>
-                <option value="brown">Brown</option>
+                  <option value="">Select Color to Print</option>
+                  <option value="1-color">1 Color</option>
+                  <option value="2-color">2 Color</option>
+                  <option value="4-color">4 Color</option>
                 </select>
               </div>
             </div>
-
-            <!-- Shipping and Quantity Row -->
+        
+            <!-- Select Paper Color and Quantity Row -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label class="block text-gray-700 mb-2"
-                  >Select the Shipping Option</label
-                >
+                <label class="block text-gray-700 mb-2">Select Paper Color</label>
                 <select
                   class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 >
-                <option value="">Please choose an option</option>
-                <option value="standard">Standard(1-3 Months)</option>
-                <option value="express">Express(Less than 1 Month)</option>
-                <option value="urgent">Urgent(6-8 Days)</option>
+                  <option value="">Select Paper Color</option>
+                  <option value="white">White</option>
+                  <option value="brown">Brown</option>
+                  <option value="black">Black</option>
                 </select>
               </div>
+        
               <div>
                 <label class="block text-gray-700 mb-2">Quantity</label>
                 <input
@@ -252,27 +320,25 @@
                 />
               </div>
             </div>
-
-            <!-- Other Requirements -->
-            <div class="flex flex-col md:flex-row gap-6">
-              <div class="md:w-1/2">
-                <label class="block text-gray-700 mb-2"
-                  >Other Requirements</label
-                >
-                <textarea
-                  rows="4"
+        
+            <!-- Select Shipping Option and Upload Prototype Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-gray-700 mb-2">Select the Shipping Option</label>
+                <select
                   class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
-                ></textarea>
-              </div>
-
-              <div class="md:w-1/2">
-                <label class="block text-gray-700 mb-2"
-                  >Upload Prototype / Sample if you have</label
                 >
+                  <option value="">Please choose an option</option>
+                  <option value="standard">Standard(1-3 Months)</option>
+                  <option value="express">Express(Less than 1 Month)</option>
+                  <option value="urgent">Urgent(6-8 Days)</option>
+                </select>
+              </div>
+        
+              <div>
+                <label class="block text-gray-700 mb-2">Upload Prototype / Sample if you have</label>
                 <div class="flex items-center gap-4">
-                  <label
-                    class="cursor-pointer bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300"
-                  >
+                  <label class="cursor-pointer bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300">
                     Choose File
                     <input type="file" class="hidden" />
                   </label>
@@ -280,19 +346,26 @@
                 </div>
               </div>
             </div>
+        
+            <!-- Other Requirements -->
+            <div class="flex flex-col md:flex-row gap-6">
+              <div class="md:w-1/2">
+                <label class="block text-gray-700 mb-2">Other Requirements</label>
+                <textarea
+                  rows="3"
+                  class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                ></textarea>
+              </div>
+            </div>
+        
             <div class="flex flex-col md:flex-row gap-5 justify-between">
-              <div
-                class="md:w-1/2 bg-white rounded-lg flex justify-around py-2 items-center"
-              >
+              <div class="md:w-1/2 bg-white rounded-lg flex justify-around py-2 items-center">
                 <div class="flex justify-center items-center gap-2">
                   <input type="checkbox" class="w-5 h-5" /> I am not a Robot
                 </div>
-                <img
-                  src="./Single Product _ Wax Paper_files/recaptcha.png"
-                  class="w-10"
-                />
+                <img src="assets/img/recaptcha.png" class="w-10" />
               </div>
-
+        
               <!-- Submit Button -->
               <div class="flex justify-start">
                 <button
@@ -377,7 +450,7 @@
         class="flex flex-1 md:w-1/2 h-[40vh] md:h-[400px] lg:h-[500px] justify-end"
       >
         <img
-          src="assets/Custom Kraft Paper/Section 1/1.jpg"
+          src="assets/Custom Kraft Paper/Section 1/Webp/1.webp"
           class="rounded-2xl mx-auto md:mx-0 md:w-4/5 h-full object-cover"
           alt="why-choose-img"
         />
@@ -438,7 +511,7 @@
         class="flex flex-1 md:w-1/2 h-[40vh] md:h-[400px] lg:h-[500px] justify-start"
       >
         <img
-          src="assets/Custom Kraft Paper/Section 2/1.jpg"
+          src="assets/Custom Kraft Paper/Section 2/Webp/1.webp"
           class="rounded-2xl mx-auto md:mx-0 md:w-4/5 h-full object-cover"
           alt="why-choose-img"
         />
@@ -738,7 +811,7 @@
           <button
             class="bg-[#e8862d] w-40 md:w-52 text-center text-black px-1 md:px-4 py-2 rounded-xl"
           >
-            Ask Another Question
+            Ask Question
           </button>
         </div>
       </div>
@@ -764,28 +837,6 @@
             Glossy kraft paper, with its shiny, reflective finish, enhances colors and gives a polished, 
             premium appearance. It’s more durable and water-resistant, ideal for high-end products or 
             designs that need to stand out. 
-          </div>
-        </div>
-
-        <div class="faq-item border rounded-2xl overflow-hidden">
-          <!-- FAQ Item 2 -->
-          <div
-            class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
-            onclick="toggleFAQ(this)"
-          >
-            <p>Can I Update My Order After Payment?</p>
-            <i
-              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
-            ></i>
-          </div>
-          <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
-            Absolutely! We understand plans can change, and we’re here to help.
-            You can request design changes from the moment we start designing 
-            until we send the final design to you for approval. You can also
-            adjust details like sheet size or type before we begin printing.
-            <br /><br />
-            We begin designing within 24 hours of your order, and printing starts 
-            right after design approval. Need updates? Contact us to make your project perfect!
           </div>
         </div>
 
@@ -1209,12 +1260,13 @@
         </div>
       </div>
     </div>
-    <!-- Footer -->
+     <!-- Footer -->
 
-    <div class="bg-[#123636]">
-      <div class="flex flex-col gap-10 md:gap-0 py-20 md:flex-row">
+     <div class="bg-[#123636]">
+      <div class="flex flex-col gap-5 md:gap-0 py-10 md:py-20 md:flex-row">
+        <!-- Left Section -->
         <div
-          class="flex justify-center items-start md:w-1/3 w-full flex-col gap-5 px-5 text-[#d3996a]"
+          class="flex justify-center items-start md:w-1/3 w-full flex-col gap-4 px-3 md:px-5 text-[#d3996a]"
         >
           <div class="flex items-start gap-2">
             <img
@@ -1222,27 +1274,27 @@
               class="scale-90"
               alt="Logo"
             />
-            <!-- <p class="text-3xl heading text-[#d3996a]">Wax Paper</p> -->
           </div>
-          <p class="text-justify">
-            We are trusted custom wax paper printing company, dedicated to
+          <p class="text-justify text-sm md:text-base">
+            We are a trusted custom wax paper printing company, dedicated to
             delivering high-quality products and creative designs from concept
-            to creation. Serving top brands across the USA
+            to creation. Serving top brands across the USA.
           </p>
           <div>
             <button
-              class="w-52 bg-[#e8862d] text-[#123636] rounded-lg py-1 text-center text-lg"
+              class="w-full md:w-52 bg-[#e8862d] text-[#123636] rounded-lg py-1 px-3 text-center text-sm md:text-lg"
             >
               Get a Quote
             </button>
           </div>
         </div>
-
+    
+        <!-- Middle Section -->
         <div
-          class="md:w-1/3 flex items-center px-5 md:justify-center text-[#d3996a] w-full"
+          class="md:w-1/3 flex items-center px-3 md:px-5 md:justify-center text-[#d3996a] w-full"
         >
-          <ul class="flex flex-col text-lg gap-2">
-            <li><a href="#"> Blog</a></li>
+          <ul class="flex flex-col text-sm md:text-lg gap-1 md:gap-2">
+            <li><a href="#">Blog</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Get a Quote</a></li>
             <li><a href="#">Our Products</a></li>
@@ -1251,29 +1303,36 @@
             <li><a href="#">Terms and Conditions</a></li>
           </ul>
         </div>
+    
+        <!-- Right Section -->
         <div
-          class="md:w-1/3 flex items-center px-5 md:justify-center text-[#d3996a] w-full"
+          class="md:w-1/3 flex items-center px-3 md:px-5 md:justify-center text-[#d3996a] w-full"
         >
-          <ul class="flex flex-col text-lg gap-2">
+          <ul class="flex flex-col text-sm md:text-lg gap-1 md:gap-2">
             <li>888-836-3696</li>
             <li>sales@waxpapers.net</li>
             <li>285 NOSTRAND</li>
             <li>AVE UNIT #120</li>
             <li>BROOKLYN, NY 11216</li>
-
-            <li class="text-center text-2xl font-bold">Follow</li>
-
-            <li class="flex gap-5">
-              <a href="#"> <i class="fa-brands text-3xl fa-facebook"></i> </a
-              ><a href="#"> <i class="fa-brands text-3xl fa-instagram"></i> </a
-              ><a href="#"> <i class="fa-brands text-3xl fa-linkedin"></i> </a
-              ><a href="#">
-                <i class="fa-brands fa-twitter text-3xl"></i>
-              </a>
+            <li class="text-center text-lg md:text-2xl font-bold">Follow</li>
+            <li class="flex justify-center gap-3 md:gap-5">
+              <a href="#"> <i class="fa-brands text-2xl md:text-3xl fa-facebook"></i> </a>
+              <a href="#"> <i class="fa-brands text-2xl md:text-3xl fa-instagram"></i> </a>
+              <a href="#"> <i class="fa-brands text-2xl md:text-3xl fa-linkedin"></i> </a>
+              <a href="#"> <i class="fa-brands fa-twitter text-2xl md:text-3xl"></i> </a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
-  </body>
+    </div> 
+      <!-- Scroll to Top Button -->
+      <button
+      id="scrollToTopBtn"
+       class="fixed bottom-5 right-5 bg-[#123636] text-[#d3996a] p-3 rounded-full shadow-lg hidden"
+       onclick="scrollToTop()"
+      aria-label="Scroll to Top"
+          >
+      <i class="fa-solid fa-arrow-up text-2xl"></i>
+     </button>
+   </body>
 </html>

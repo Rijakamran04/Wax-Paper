@@ -28,28 +28,51 @@
         </div>
       </div>
     </div>
-    <!-- Navbar-Section -->
-    <div class="container py-2">
+     <!-- Navbar-Section -->
+     <div class="container py-2">
       <div class="flex flex-row justify-between items-center">
+        <!-- Logo Section -->
         <div>
           <a href="index.html">
             <img src="assets/img/logo.png" class="w-40" alt="logo" />
-            </a>
+          </a>
         </div>
+    
+        <!-- Links Section -->
         <div>
           <ul class="flex flex-row font-semibold gap-8 hidden md:flex text-lg">
             <a href="index.html">
-              <li class="hover:text-[#d3996a] ease-in-out duration-300">
-                Home
-              </li>
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">Home</li>
             </a>
-            <a href="Single-Product.html">
-              <li class="hover:text-[#d3996a] ease-in-out duration-300">
-                Product
-              </li>
-            </a>
+    
+            <!-- Products Dropdown -->
+            <li class="relative group">
+              <a
+                href="Single-Product.html"
+                class="text-[#d3996a] hover:text-[#d3996a] ease-in-out duration-300"
+              >
+                Products
+              </a>
+              <!-- Dropdown Menu -->
+              <ul
+                class="absolute left-0 top-full bg-[#123636] text-[#d3996a] hidden group-hover:flex flex-col gap-2 py-3 px-5 shadow-lg z-50 min-w-max"
+              >
+                <li class="hover:text-white text-base"><a href="Custom Deli Paper.html">Custom Deli Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Butcher Paper.html">Custom Butcher Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Kraft Paper.html">Custom Kraft Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Parchment Paper.html">Custom Parchment Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Greaseproof Paper.html">Custom Greaseproof Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Sandwich Paper.html">Custom Sandwich Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Cheese Paper.html">Custom Cheese Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Basket Liner.html">Custom Basket Liner</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Freezer Paper.html">Custom Freezer Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Food Paper.html">Custom Food Paper</a></li>
+                <li class="hover:text-white text-base"><a href="Custom Hot Paper.html">Custom Hot Paper</a></li>
+              </ul>
+            </li>
+    
             <a href="Blogs.html">
-              <li class="text-[#d3996a]">Blogs</li>
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">Blogs</li>
             </a>
             <a href="Contact.html">
               <li class="hover:text-[#d3996a] ease-in-out duration-300">
@@ -58,15 +81,15 @@
             </a>
           </ul>
         </div>
-
+    
+        <!-- Quote Button Section -->
         <div>
-          <p
-            class="bg-[#123636] hidden md:flex text-[#d3996a] px-4 py-3 rounded-xl"
-          >
+          <p class="bg-[#123636] hidden md:flex text-[#d3996a] px-4 py-3 rounded-xl">
             Get a Quote
           </p>
         </div>
-
+    
+        <!-- Mobile Menu Icon -->
         <div class="flex md:hidden">
           <i
             class="fa-solid text-3xl fa-bars cursor-pointer"
@@ -75,44 +98,91 @@
         </div>
       </div>
     </div>
-
     <!-- Add this sidebar right after the navbar section -->
     <div
-      id="sidebar"
-      class="fixed top-0 right-0 h-full w-64 bg-[#123636] transform translate-x-full transition-transform duration-300 ease-in-out z-50"
-    >
-      <div
-        class="flex justify-between text-[#d3996a] items-center p-4 border-b border-[#d3996a]"
-      >
-        <h2 class="text-xl">Menu</h2>
-        <i
-          class="fa-solid text-[#d3996a] fa-times text-2xl cursor-pointer"
-          onclick="toggleSidebar()"
-        ></i>
-      </div>
-      <ul class="flex text-[#d3996a] flex-col p-4 gap-4">
-        <a href="index.html">
-          <li>Home</li>
-        </a>
-        <a href="Single-Product.html">
-          <li>Product</li>
-        </a>
-        <a href="Blogs.html">
-          <li>Blogs</li>
-        </a>
-        <a href="Contact.html">
-          <li>Contact Us</li>
-        </a>
-        <li class="cursor-pointer">Get a Quote</li>
-      </ul>
-    </div>
-
-    <!-- Add this overlay div right after the sidebar -->
+    id="sidebar"
+    class="fixed top-0 right-0 h-full w-64 bg-[#123636] transform translate-x-full transition-transform duration-300 ease-in-out z-50"
+  >
     <div
-      id="overlay"
-      class="fixed inset-0 bg-black opacity-50 hidden z-40"
-      onclick="toggleSidebar()"
-    ></div>
+      class="flex justify-between text-[#d3996a] items-center p-4 border-b border-[#d3996a]"
+    >
+      <h2 class="text-xl">Menu</h2>
+      <i
+        class="fa-solid text-[#d3996a] fa-times text-2xl cursor-pointer"
+        onclick="toggleSidebar()"
+      ></i>
+    </div>
+    <ul class="flex text-[#d3996a] flex-col p-4 gap-4">
+      <a href="index.html">
+        <li>Home</li>
+      </a>
+  
+      <!-- Products with Dropdown -->
+      <li class="relative">
+        <div
+          class="cursor-pointer flex justify-between items-center"
+          onclick="toggleDropdown()"
+        >
+          <span>Products</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <ul
+          id="productsDropdown"
+          class="hidden flex-col gap-2 bg-[#1a4545] p-2 mt-2 rounded-md"
+        >
+          <li class="hover:text-white">
+            <a href="Custom Deli Paper.html">Custom Deli Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Butcher Paper.html">Custom Butcher Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Kraft Paper.html">Custom Kraft Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Parchment Paper.html">Custom Parchment Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Greaseproof Paper.html">Custom Greaseproof Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Sandwich Paper.html">Custom Sandwich Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Cheese Paper.html">Custom Cheese Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Basket Liner.html">Custom Basket Liner</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Freezer Paper.html">Custom Freezer Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Food Paper.html">Custom Food Paper</a>
+          </li>
+          <li class="hover:text-white">
+            <a href="Custom Hot Paper.html">Custom Hot Paper</a>
+          </li>
+        </ul>
+      </li>
+  
+      <a href="Blogs.html">
+        <li>Blogs</li>
+      </a>
+      <a href="Contact.html">
+        <li>Contact Us</li>
+      </a>
+      <li class="cursor-pointer">Get a Quote</li>
+    </ul>
+  </div>
+  
+  <!-- Overlay -->
+  <div
+    id="overlay"
+    class="fixed inset-0 bg-black opacity-50 hidden z-40"
+    onclick="toggleSidebar()"
+  ></div>
+  
 
     <!-- Hero section -->
 
@@ -270,35 +340,41 @@
       </div>
     </div>
 
-    <!-- Footer -->
-    <div class="bg-[#123636]">
-      <div class="flex flex-col gap-10 md:gap-0 py-20 md:flex-row">
+     <!-- Footer -->
+
+     <div class="bg-[#123636]">
+      <div class="flex flex-col gap-5 md:gap-0 py-10 md:py-20 md:flex-row">
+        <!-- Left Section -->
         <div
-          class="flex justify-center items-center md:w-1/3 w-full flex-col gap-5 px-5 text-[#d3996a]"
+          class="flex justify-center items-start md:w-1/3 w-full flex-col gap-4 px-3 md:px-5 text-[#d3996a]"
         >
-          <div class="flex items-center gap-2">
-            <img src="assets/img/Logo/Logo.png" class="h-32" alt="Logo" />
-            <p class="text-3xl heading text-[#d3996a]">Wax Paper</p>
+          <div class="flex items-start gap-2">
+            <img
+              src="assets/img/Logo/Footer Logo.png"
+              class="scale-90"
+              alt="Logo"
+            />
           </div>
-          <p class="text-justify">
-            We are an experienced custom paper printing company working in
-            collaboration with the leading brands globally. With beautiful
-            designs and the best quality, we manufacture greatness.
+          <p class="text-justify text-sm md:text-base">
+            We are a trusted custom wax paper printing company, dedicated to
+            delivering high-quality products and creative designs from concept
+            to creation. Serving top brands across the USA.
           </p>
           <div>
-            <div
-              class="w-52 bg-[#e8862d] text-[#123636] rounded-lg py-1 text-center text-lg"
+            <button
+              class="w-full md:w-52 bg-[#e8862d] text-[#123636] rounded-lg py-1 px-3 text-center text-sm md:text-lg"
             >
               Get a Quote
-            </div>
+            </button>
           </div>
         </div>
-
+    
+        <!-- Middle Section -->
         <div
-          class="md:w-1/3 flex items-center px-5 md:justify-center text-[#d3996a] w-full"
+          class="md:w-1/3 flex items-center px-3 md:px-5 md:justify-center text-[#d3996a] w-full"
         >
-          <ul class="flex flex-col text-lg gap-2">
-            <li><a href="#"> Blog</a></li>
+          <ul class="flex flex-col text-sm md:text-lg gap-1 md:gap-2">
+            <li><a href="#">Blog</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Get a Quote</a></li>
             <li><a href="#">Our Products</a></li>
@@ -307,29 +383,36 @@
             <li><a href="#">Terms and Conditions</a></li>
           </ul>
         </div>
+    
+        <!-- Right Section -->
         <div
-          class="md:w-1/3 flex items-center px-5 md:justify-center text-[#d3996a] w-full"
+          class="md:w-1/3 flex items-center px-3 md:px-5 md:justify-center text-[#d3996a] w-full"
         >
-          <ul class="flex flex-col text-lg gap-2">
+          <ul class="flex flex-col text-sm md:text-lg gap-1 md:gap-2">
             <li>888-836-3696</li>
             <li>sales@waxpapers.net</li>
             <li>285 NOSTRAND</li>
             <li>AVE UNIT #120</li>
             <li>BROOKLYN, NY 11216</li>
-
-            <li class="text-center text-2xl font-bold">Follow</li>
-
-            <li class="flex gap-5">
-              <a href="#"> <i class="fa-brands text-3xl fa-facebook"></i> </a
-              ><a href="#"> <i class="fa-brands text-3xl fa-instagram"></i> </a
-              ><a href="#"> <i class="fa-brands text-3xl fa-linkedin"></i> </a
-              ><a href="#">
-                <i class="fa-brands fa-twitter text-3xl"></i>
-              </a>
+            <li class="text-center text-lg md:text-2xl font-bold">Follow</li>
+            <li class="flex justify-center gap-3 md:gap-5">
+              <a href="#"> <i class="fa-brands text-2xl md:text-3xl fa-facebook"></i> </a>
+              <a href="#"> <i class="fa-brands text-2xl md:text-3xl fa-instagram"></i> </a>
+              <a href="#"> <i class="fa-brands text-2xl md:text-3xl fa-linkedin"></i> </a>
+              <a href="#"> <i class="fa-brands fa-twitter text-2xl md:text-3xl"></i> </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-  </body>
+     <!-- Scroll to Top Button -->
+     <button
+     id="scrollToTopBtn"
+      class="fixed bottom-5 right-5 bg-[#123636] text-[#d3996a] p-3 rounded-full shadow-lg hidden"
+      onclick="scrollToTop()"
+     aria-label="Scroll to Top"
+         >
+     <i class="fa-solid fa-arrow-up text-2xl"></i>
+    </button>
+    </body>
 </html>

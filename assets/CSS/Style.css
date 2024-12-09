@@ -53,10 +53,19 @@
     max-width: 1320px !important;
   }
 }
-.help_buttons {
+ .help_buttons {
   margin-top: 50px;
   display: flex;
   justify-content: center;
+  align-items: center;
+} 
+.help_button {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns on larger screens */
+  gap: 20px;
+  margin: 50px auto;
+  padding: 0px 40px;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -79,17 +88,22 @@
 
 .help_button button {
   padding: 0px 10px 10px 10px;
-  margin-right: 10px;
   border: none;
   border-radius: 10px;
   background-color: white;
   border-bottom: 3px solid #d3996a;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .help_button {
-    gap: 10px;
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    gap: 5px; /* Smaller gap for mobile */
+  }
+}
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .help_button button {
+    padding: 0px 45px 10px 45px; /* Increased padding for larger screens */
   }
 }
 .heading {
@@ -309,3 +323,12 @@
   bottom: -2rem;
 }
 
+
+#scrollToTopBtn {
+  display: none; /* Hidden by default */
+  transition: all 0.3s ease-in-out;
+}
+
+#scrollToTopBtn.show {
+  display: block; /* Show when scrolled down */
+}
