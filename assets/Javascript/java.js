@@ -120,3 +120,35 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+
+//carousal
+document.addEventListener("DOMContentLoaded", () => {
+  const carouselImages = document.getElementById("carousel-images");
+  const thumbnails = document.querySelectorAll(".thumbnail");
+  const prevButton = document.getElementById("prev");
+  const nextButton = document.getElementById("next");
+
+  let currentIndex = 0;
+
+  function updateCarousel(index) {
+    const offset = -index * 100; // Shift by 100% per image
+    carouselImages.style.transform = `translateX(${offset}%)`;
+    currentIndex = index;
+  }
+
+  prevButton.addEventListener("click", () => {
+    const newIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+    updateCarousel(newIndex);
+  });
+
+  nextButton.addEventListener("click", () => {
+    const newIndex = (currentIndex + 1) % thumbnails.length;
+    updateCarousel(newIndex);
+  });
+
+  thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener("click", () => {
+      updateCarousel(index);
+    });
+  });
+});

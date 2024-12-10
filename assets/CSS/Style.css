@@ -103,7 +103,7 @@
 /* Media query for larger screens */
 @media (min-width: 768px) {
   .help_button button {
-    padding: 0px 45px 10px 45px; /* Increased padding for larger screens */
+    padding: 0px 55px 10px 55px; /* Increased padding for larger screens */
   }
 }
 .heading {
@@ -332,3 +332,4 @@
 #scrollToTopBtn.show {
   display: block; /* Show when scrolled down */
 }
+

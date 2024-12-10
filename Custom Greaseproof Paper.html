@@ -21,7 +21,7 @@
   </head>
   <body>
     <div
-      class="flex text-[#d3996a] bg-[#123636] h-16 px-2 relative sticky top-0 z-50"
+      class="flex text-[#d3996a] bg-[#123636] h-16 px-2 relative md:sticky top-0 z-50"
     >
       <div class="flex flex-1 text-center justify-center items-center">
         Free Shipping all over USA
@@ -35,7 +35,9 @@
       </div>
     </div>
     <!-- Navbar-Section -->
-    <div class="container py-2">
+    <div
+      class="container md:sticky top-16 z-50 bg-white py-2 transition-transform duration-300"
+    >
       <div class="flex flex-row justify-between items-center">
         <!-- Logo Section -->
         <div>
@@ -43,42 +45,178 @@
             <img src="assets/img/logo.png" class="w-40" alt="logo" />
           </a>
         </div>
-    
+
         <!-- Links Section -->
         <div>
           <ul class="flex flex-row font-semibold gap-8 hidden md:flex text-lg">
             <a href="index.html">
-              <li class="hover:text-[#d3996a] ease-in-out duration-300">Home</li>
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Home
+              </li>
             </a>
-    
+
             <!-- Products Dropdown -->
             <li class="relative group">
               <a
                 href="Single-Product.html"
-                class="text-[#d3996a] hover:text-[#d3996a] ease-in-out duration-300"
+                class="text-[#d3996a] hover:text-[#d3996a] transition duration-300"
               >
                 Products
               </a>
               <!-- Dropdown Menu -->
               <ul
-                class="absolute left-0 top-full bg-[#123636] text-[#d3996a] hidden group-hover:flex flex-col gap-2 py-3 px-5 shadow-lg z-50 min-w-max"
+                class="absolute left-1/2 top-full bg-[#123636] text-[#d3996a] hidden group-hover:flex flex-wrap gap-6 p-4 rounded-2xl shadow-lg z-50 w-[90vw] max-w-[900px] overflow-auto transform -translate-x-1/2"
               >
-                <li class="hover:text-white text-base"><a href="Custom Deli Paper.html">Custom Deli Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Butcher Paper.html">Custom Butcher Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Kraft Paper.html">Custom Kraft Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Parchment Paper.html">Custom Parchment Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Greaseproof Paper.html">Custom Greaseproof Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Sandwich Paper.html">Custom Sandwich Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Cheese Paper.html">Custom Cheese Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Basket Liner.html">Custom Basket Liner</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Freezer Paper.html">Custom Freezer Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Food Paper.html">Custom Food Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Hot Paper.html">Custom Hot Paper</a></li>
+                <!-- Column 1 -->
+                <div class="flex flex-col gap-4 w-full sm:w-[30%]">
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Deli Paper.webp"
+                      alt="Custom Deli Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Deli Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Deli Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Butcher Paper.webp"
+                      alt="Custom Butcher Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Butcher Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Butcher Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Kraft Paper.webp"
+                      alt="Custom Kraft Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Kraft Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Kraft Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Parchment Paper.webp"
+                      alt="Custom Parchment Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Parchment Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Parchment Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Greaseproof Paper.webp"
+                      alt="Custom Greaseproof Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Greaseproof Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Greaseproof Paper</a
+                    >
+                  </li>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="flex flex-col gap-4 w-full sm:w-[30%]">
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Sandwich Paper.webp"
+                      alt="Custom Sandwich Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Sandwich Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Sandwich Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Cheese Paper.webp"
+                      alt="Custom Cheese Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Cheese Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Cheese Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Basket Liner.webp"
+                      alt="Custom Basket Liner"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Basket Liner.html"
+                      class="hover:text-white text-base"
+                      >Custom Basket Liner</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Freezer Paper.webp"
+                      alt="Custom Freezer Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Freezer Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Freezer Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Food Paper.webp"
+                      alt="Custom Food Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Food Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Food Paper</a
+                    >
+                  </li>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="flex flex-col gap-4 w-full sm:w-[30%]">
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Hot Paper.webp"
+                      alt="Custom Hot Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Hot Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Hot Paper</a
+                    >
+                  </li>
+                </div>
               </ul>
             </li>
-    
+
             <a href="Blogs.html">
-              <li class="hover:text-[#d3996a] ease-in-out duration-300">Blogs</li>
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Blogs
+              </li>
             </a>
             <a href="Contact.html">
               <li class="hover:text-[#d3996a] ease-in-out duration-300">
@@ -87,14 +225,16 @@
             </a>
           </ul>
         </div>
-    
+
         <!-- Quote Button Section -->
         <div>
-          <p class="bg-[#123636] hidden md:flex text-[#d3996a] px-4 py-3 rounded-xl">
+          <p
+            class="bg-[#123636] hidden md:flex text-[#d3996a] px-4 py-3 rounded-xl"
+          >
             Get a Quote
           </p>
         </div>
-    
+
         <!-- Mobile Menu Icon -->
         <div class="flex md:hidden">
           <i
@@ -106,81 +246,83 @@
     </div>
     <!-- Add this sidebar right after the navbar section -->
     <div
-    id="sidebar"
-    class="fixed top-0 right-0 h-full w-64 bg-[#123636] transform translate-x-full transition-transform duration-300 ease-in-out z-50"
-  >
-    <div
-      class="flex justify-between text-[#d3996a] items-center p-4 border-b border-[#d3996a]"
+      id="sidebar"
+      class="fixed top-0 right-0 h-full w-64 bg-[#123636] transform translate-x-full transition-transform duration-300 ease-in-out z-50"
     >
-      <h2 class="text-xl">Menu</h2>
-      <i
-        class="fa-solid text-[#d3996a] fa-times text-2xl cursor-pointer"
-        onclick="toggleSidebar()"
-      ></i>
+      <div
+        class="flex justify-between text-[#d3996a] items-center p-4 border-b border-[#d3996a]"
+      >
+        <h2 class="text-xl">Menu</h2>
+        <i
+          class="fa-solid text-[#d3996a] fa-times text-2xl cursor-pointer"
+          onclick="toggleSidebar()"
+        ></i>
+      </div>
+      <ul class="flex text-[#d3996a] flex-col p-4 gap-4">
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+
+        <!-- Products with Dropdown -->
+        <li class="relative">
+          <div
+            class="cursor-pointer flex justify-between items-center"
+            onclick="toggleDropdown()"
+          >
+            <span>Products</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <ul
+            id="productsDropdown"
+            class="hidden flex-col gap-2 bg-[#1a4545] p-2 mt-2 rounded-md"
+          >
+            <li class="hover:text-white">
+              <a href="Custom Deli Paper.html">Custom Deli Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Butcher Paper.html">Custom Butcher Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Kraft Paper.html">Custom Kraft Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Parchment Paper.html">Custom Parchment Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Greaseproof Paper.html"
+                >Custom Greaseproof Paper</a
+              >
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Sandwich Paper.html">Custom Sandwich Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Cheese Paper.html">Custom Cheese Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Basket Liner.html">Custom Basket Liner</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Freezer Paper.html">Custom Freezer Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Food Paper.html">Custom Food Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Hot Paper.html">Custom Hot Paper</a>
+            </li>
+          </ul>
+        </li>
+
+        <a href="Blogs.html">
+          <li>Blogs</li>
+        </a>
+        <a href="Contact.html">
+          <li>Contact Us</li>
+        </a>
+        <li class="cursor-pointer">Get a Quote</li>
+      </ul>
     </div>
-    <ul class="flex text-[#d3996a] flex-col p-4 gap-4">
-      <a href="index.html">
-        <li>Home</li>
-      </a>
-  
-      <!-- Products with Dropdown -->
-      <li class="relative">
-        <div
-          class="cursor-pointer flex justify-between items-center"
-          onclick="toggleDropdown()"
-        >
-          <span>Products</span>
-          <i class="fa-solid fa-chevron-down"></i>
-        </div>
-        <ul
-          id="productsDropdown"
-          class="hidden flex-col gap-2 bg-[#1a4545] p-2 mt-2 rounded-md"
-        >
-          <li class="hover:text-white">
-            <a href="Custom Deli Paper.html">Custom Deli Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Butcher Paper.html">Custom Butcher Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Kraft Paper.html">Custom Kraft Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Parchment Paper.html">Custom Parchment Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Greaseproof Paper.html">Custom Greaseproof Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Sandwich Paper.html">Custom Sandwich Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Cheese Paper.html">Custom Cheese Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Basket Liner.html">Custom Basket Liner</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Freezer Paper.html">Custom Freezer Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Food Paper.html">Custom Food Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Hot Paper.html">Custom Hot Paper</a>
-          </li>
-        </ul>
-      </li>
-  
-      <a href="Blogs.html">
-        <li>Blogs</li>
-      </a>
-      <a href="Contact.html">
-        <li>Contact Us</li>
-      </a>
-      <li class="cursor-pointer">Get a Quote</li>
-    </ul>
-  </div>
     <!-- Add this overlay div right after the sidebar -->
     <div
       id="overlay"
@@ -242,7 +384,7 @@
                 />
               </div>
             </div>
-        
+
             <!-- Phone and Size Unit Row -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
@@ -264,7 +406,7 @@
                 </select>
               </div>
             </div>
-        
+
             <!-- Length and Width Row -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="flex gap-4">
@@ -283,10 +425,12 @@
                   />
                 </div>
               </div>
-        
+
               <!-- Select Color Print Option -->
               <div>
-                <label class="block text-gray-700 mb-2">Select Color Print Option</label>
+                <label class="block text-gray-700 mb-2"
+                  >Select Color Print Option</label
+                >
                 <select
                   class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 >
@@ -297,11 +441,13 @@
                 </select>
               </div>
             </div>
-        
+
             <!-- Select Paper Color and Quantity Row -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label class="block text-gray-700 mb-2">Select Paper Color</label>
+                <label class="block text-gray-700 mb-2"
+                  >Select Paper Color</label
+                >
                 <select
                   class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 >
@@ -311,7 +457,7 @@
                   <option value="black">Black</option>
                 </select>
               </div>
-        
+
               <div>
                 <label class="block text-gray-700 mb-2">Quantity</label>
                 <input
@@ -320,11 +466,13 @@
                 />
               </div>
             </div>
-        
+
             <!-- Select Shipping Option and Upload Prototype Row -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label class="block text-gray-700 mb-2">Select the Shipping Option</label>
+                <label class="block text-gray-700 mb-2"
+                  >Select the Shipping Option</label
+                >
                 <select
                   class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 >
@@ -334,11 +482,15 @@
                   <option value="urgent">Urgent(6-8 Days)</option>
                 </select>
               </div>
-        
+
               <div>
-                <label class="block text-gray-700 mb-2">Upload Prototype / Sample if you have</label>
+                <label class="block text-gray-700 mb-2"
+                  >Upload Prototype / Sample if you have</label
+                >
                 <div class="flex items-center gap-4">
-                  <label class="cursor-pointer bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300">
+                  <label
+                    class="cursor-pointer bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300"
+                  >
                     Choose File
                     <input type="file" class="hidden" />
                   </label>
@@ -346,26 +498,30 @@
                 </div>
               </div>
             </div>
-        
+
             <!-- Other Requirements -->
             <div class="flex flex-col md:flex-row gap-6">
               <div class="md:w-1/2">
-                <label class="block text-gray-700 mb-2">Other Requirements</label>
+                <label class="block text-gray-700 mb-2"
+                  >Other Requirements</label
+                >
                 <textarea
                   rows="3"
                   class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 ></textarea>
               </div>
             </div>
-        
+
             <div class="flex flex-col md:flex-row gap-5 justify-between">
-              <div class="md:w-1/2 bg-white rounded-lg flex justify-around py-2 items-center">
+              <div
+                class="md:w-1/2 bg-white rounded-lg flex justify-around py-2 items-center"
+              >
                 <div class="flex justify-center items-center gap-2">
                   <input type="checkbox" class="w-5 h-5" /> I am not a Robot
                 </div>
                 <img src="assets/img/recaptcha.png" class="w-10" />
               </div>
-        
+
               <!-- Submit Button -->
               <div class="flex justify-start">
                 <button
@@ -531,12 +687,14 @@
     </div>
 
     <!-- Chart-Section -->
-    <div class="container mt-20 mx-auto flex flex-col gap-10 justify-center items-center">
+    <div
+      class="container mt-20 mx-auto flex flex-col gap-10 justify-center items-center"
+    >
       <p class="text-black text-3xl font-bold heading">
         Custom Greaseproof Paper
         <span class="text-[#d3996a] text-3xl heading">Specifications</span>
       </p>
-    
+
       <div class="w-full md:w-3/4 lg:w-2/3">
         <table class="w-full border">
           <tbody>
@@ -570,7 +728,9 @@
             </tr>
             <tr class="border-b">
               <td class="py-2 pl-2 font-semibold">Color Options</td>
-              <td class="py-2">1 Color, 1 Color Full Background, or 2 Color Pantone</td>
+              <td class="py-2">
+                1 Color, 1 Color Full Background, or 2 Color Pantone
+              </td>
             </tr>
             <tr class="border-b">
               <td class="py-2 pl-2 font-semibold">Ink Type</td>
@@ -580,7 +740,7 @@
               <td class="py-2 pl-2 font-semibold">Print Process</td>
               <td class="py-2">Offset Printing</td>
             </tr>
-         
+
             <tr class="border-b">
               <td class="py-2 pl-2 font-semibold">Finish</td>
               <td class="py-2">Matte, Glossy</td>
@@ -597,7 +757,6 @@
         </table>
       </div>
     </div>
-    
 
     <!-- Dimension Table -->
 
@@ -823,7 +982,7 @@
           </button>
         </div>
       </div>
-    
+
       <div class="w-full md:w-1/2 flex flex-col gap-4">
         <!-- FAQ Item 1 -->
         <div class="faq-item border rounded-2xl overflow-hidden">
@@ -832,50 +991,66 @@
             onclick="toggleFAQ(this)"
           >
             <p>Is greaseproof paper microwave-safe?</p>
-            <i class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"></i>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
           </div>
           <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
-            Yes, greaseproof paper is generally microwave-safe. It can be used to cover food in the microwave, preventing splatters and helping to retain moisture. However, it's important to ensure that the greaseproof paper does not have any metallic elements (such as foil) or coatings that may not be microwave-safe.
+            Yes, greaseproof paper is generally microwave-safe. It can be used
+            to cover food in the microwave, preventing splatters and helping to
+            retain moisture. However, it's important to ensure that the
+            greaseproof paper does not have any metallic elements (such as foil)
+            or coatings that may not be microwave-safe.
           </div>
         </div>
-    
+
         <!-- FAQ Item 2 -->
         <div class="faq-item border rounded-2xl overflow-hidden">
           <div
             class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
             onclick="toggleFAQ(this)"
           >
-            <p>Can I Update My Order After Payment?
-            </p>
-            <i class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"></i>
+            <p>Can I Update My Order After Payment?</p>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
           </div>
           <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
-            Absolutely! We understand plans can change, and we’re here to help. You can request design changes from the moment we start designing until we send the final design to you for approval. You can also adjust details like sheet size or type before we begin printing. <br> <br>
-            We begin designing within 24 hours of your order, and printing starts right after design approval. Need updates? Contact us to make your project perfect!
-            
+            Absolutely! We understand plans can change, and we’re here to help.
+            You can request design changes from the moment we start designing
+            until we send the final design to you for approval. You can also
+            adjust details like sheet size or type before we begin printing.
+            <br />
+            <br />
+            We begin designing within 24 hours of your order, and printing
+            starts right after design approval. Need updates? Contact us to make
+            your project perfect!
           </div>
         </div>
-    
+
         <!-- FAQ Item 3 -->
         <div class="faq-item border rounded-2xl overflow-hidden">
           <div
             class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
             onclick="toggleFAQ(this)"
           >
-            <p>What customization options are available for greaseproof paper?</p>
-            <i class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"></i>
+            <p>
+              What customization options are available for greaseproof paper?
+            </p>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
           </div>
           <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
-
-
             Customization options for greaseproof paper include: <br />
             <strong>Designs:</strong> Add logos, artwork, or QR codes.<br />
             <strong>Sizes & Shapes:</strong> Tailor to your packaging needs.<br />
-            <strong>Colors:</strong> Choose custom colors to match your brand.<br />
+            <strong>Colors:</strong> Choose custom colors to match your
+            brand.<br />
             <strong>Patterns & Textures:</strong> Add unique finishes.
           </div>
         </div>
-    
+
         <!-- FAQ Item 4 -->
         <div class="faq-item border rounded-2xl overflow-hidden">
           <div
@@ -883,13 +1058,17 @@
             onclick="toggleFAQ(this)"
           >
             <p>Is brown or white greaseproof paper better?</p>
-            <i class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"></i>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
           </div>
           <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
-            <p>Brown vs. White Greaseproof Paper: A Quick Comparison
-              <br><br>
-                While both brown and white greaseproof paper are effective, they have distinct characteristics:
-                </p><br>
+            <p>
+              Brown vs. White Greaseproof Paper: A Quick Comparison <br /><br />
+              While both brown and white greaseproof paper are effective, they
+              have distinct characteristics:
+            </p>
+            <br />
 
             <strong>Brown Greaseproof Paper:</strong>
             <ul class="list-disc pl-5">
@@ -899,29 +1078,38 @@
             </ul>
             <strong>White Greaseproof Paper:</strong>
             <ul class="list-disc pl-5">
-              <li>Typically bleached for a cleaner, more polished appearance.</li>
+              <li>
+                Typically bleached for a cleaner, more polished appearance.
+              </li>
               <li>May offer slightly better heat resistance.</li>
             </ul>
-            Ultimately, the best choice for you depends on your specific needs and brand aesthetic.
+            Ultimately, the best choice for you depends on your specific needs
+            and brand aesthetic.
           </div>
         </div>
-    
+
         <!-- FAQ Item 5 -->
         <div class="faq-item border rounded-2xl overflow-hidden">
           <div
             class="faq-question flex cursor-pointer hover:bg-[#e8862d] hover:text-white transition-colors group px-10 py-2 justify-between items-center"
             onclick="toggleFAQ(this)"
           >
-            <p>Will I need to approve my greaseproof paper before it's printed?</p>
-            <i class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"></i>
+            <p>
+              Will I need to approve my greaseproof paper before it's printed?
+            </p>
+            <i
+              class="fa-solid text-[#d3996a] group-hover:text-white fa-plus"
+            ></i>
           </div>
           <div class="faq-answer px-10 py-4 bg-gray-50 hidden">
-            You got it right! We’ll send you a proof of your greaseproof paper for approval before printing begins. This ensures everything meets your expectations and allows for any final adjustments. Your order won’t move to production until you’re completely satisfied!
+            You got it right! We’ll send you a proof of your greaseproof paper
+            for approval before printing begins. This ensures everything meets
+            your expectations and allows for any final adjustments. Your order
+            won’t move to production until you’re completely satisfied!
           </div>
         </div>
       </div>
     </div>
-    
 
     <!-- Product Highlights -->
 
@@ -1280,9 +1468,9 @@
         </div>
       </div>
     </div>
-     <!-- Footer -->
+    <!-- Footer -->
 
-     <div class="bg-[#123636]">
+    <div class="bg-[#123636]">
       <div class="flex flex-col gap-5 md:gap-0 py-10 md:py-20 md:flex-row">
         <!-- Left Section -->
         <div
@@ -1308,7 +1496,7 @@
             </button>
           </div>
         </div>
-    
+
         <!-- Middle Section -->
         <div
           class="md:w-1/3 flex items-center px-3 md:px-5 md:justify-center text-[#d3996a] w-full"
@@ -1323,7 +1511,7 @@
             <li><a href="#">Terms and Conditions</a></li>
           </ul>
         </div>
-    
+
         <!-- Right Section -->
         <div
           class="md:w-1/3 flex items-center px-3 md:px-5 md:justify-center text-[#d3996a] w-full"
@@ -1336,23 +1524,31 @@
             <li>BROOKLYN, NY 11216</li>
             <li class="text-center text-lg md:text-2xl font-bold">Follow</li>
             <li class="flex justify-center gap-3 md:gap-5">
-              <a href="#"> <i class="fa-brands text-2xl md:text-3xl fa-facebook"></i> </a>
-              <a href="#"> <i class="fa-brands text-2xl md:text-3xl fa-instagram"></i> </a>
-              <a href="#"> <i class="fa-brands text-2xl md:text-3xl fa-linkedin"></i> </a>
-              <a href="#"> <i class="fa-brands fa-twitter text-2xl md:text-3xl"></i> </a>
+              <a href="#">
+                <i class="fa-brands text-2xl md:text-3xl fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands text-2xl md:text-3xl fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands text-2xl md:text-3xl fa-linkedin"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-twitter text-2xl md:text-3xl"></i>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-      <!-- Scroll to Top Button -->
-      <button
+    <!-- Scroll to Top Button -->
+    <button
       id="scrollToTopBtn"
-       class="fixed bottom-5 right-5 bg-[#123636] text-[#d3996a] p-3 rounded-full shadow-lg hidden"
-       onclick="scrollToTop()"
+      class="fixed bottom-5 right-5 bg-[#123636] text-[#d3996a] p-3 rounded-full shadow-lg hidden"
+      onclick="scrollToTop()"
       aria-label="Scroll to Top"
-          >
+    >
       <i class="fa-solid fa-arrow-up text-2xl"></i>
-     </button>
+    </button>
   </body>
 </html>

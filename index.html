@@ -40,7 +40,7 @@
   </head>
   <body>
     <div
-      class="flex sticky top-0 text-[#d3996a] z-50 bg-[#123636] h-16 px-2 relative"
+      class="flex md:sticky top-0 text-[#d3996a] z-50 bg-[#123636] h-16 px-2 relative"
     >
       <div class="flex flex-1 text-center justify-center items-center">
         Free Shipping all over USA
@@ -54,7 +54,9 @@
       </div>
     </div>
     <!-- Navbar-Section -->
-    <div class="container py-2">
+    <div
+      class="container md:sticky top-16 z-50 bg-white py-2 transition-transform duration-300"
+    >
       <div class="flex flex-row justify-between items-center">
         <!-- Logo Section -->
         <div>
@@ -62,42 +64,178 @@
             <img src="assets/img/logo.png" class="w-40" alt="logo" />
           </a>
         </div>
-    
+
         <!-- Links Section -->
         <div>
           <ul class="flex flex-row font-semibold gap-8 hidden md:flex text-lg">
             <a href="index.html">
-              <li class="hover:text-[#d3996a] ease-in-out duration-300">Home</li>
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Home
+              </li>
             </a>
-    
+
             <!-- Products Dropdown -->
             <li class="relative group">
               <a
                 href="Single-Product.html"
-                class="text-[#d3996a] hover:text-[#d3996a] ease-in-out duration-300"
+                class="text-[#d3996a] hover:text-[#d3996a] transition duration-300"
               >
                 Products
               </a>
               <!-- Dropdown Menu -->
               <ul
-                class="absolute left-0 top-full bg-[#123636] text-[#d3996a] hidden group-hover:flex flex-col gap-2 py-3 px-5 shadow-lg z-50 min-w-max"
+                class="absolute left-1/2 top-full bg-[#123636] text-[#d3996a] hidden group-hover:flex flex-wrap gap-6 p-4 rounded-2xl shadow-lg z-50 w-[90vw] max-w-[900px] overflow-auto transform -translate-x-1/2"
               >
-                <li class="hover:text-white text-base"><a href="Custom Deli Paper.html">Custom Deli Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Butcher Paper.html">Custom Butcher Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Kraft Paper.html">Custom Kraft Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Parchment Paper.html">Custom Parchment Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Greaseproof Paper.html">Custom Greaseproof Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Sandwich Paper.html">Custom Sandwich Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Cheese Paper.html">Custom Cheese Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Basket Liner.html">Custom Basket Liner</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Freezer Paper.html">Custom Freezer Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Food Paper.html">Custom Food Paper</a></li>
-                <li class="hover:text-white text-base"><a href="Custom Hot Paper.html">Custom Hot Paper</a></li>
+                <!-- Column 1 -->
+                <div class="flex flex-col gap-4 w-full sm:w-[30%]">
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Deli Paper.webp"
+                      alt="Custom Deli Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Deli Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Deli Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Butcher Paper.webp"
+                      alt="Custom Butcher Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Butcher Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Butcher Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Kraft Paper.webp"
+                      alt="Custom Kraft Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Kraft Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Kraft Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Parchment Paper.webp"
+                      alt="Custom Parchment Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Parchment Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Parchment Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Greaseproof Paper.webp"
+                      alt="Custom Greaseproof Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Greaseproof Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Greaseproof Paper</a
+                    >
+                  </li>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="flex flex-col gap-4 w-full sm:w-[30%]">
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Sandwich Paper.webp"
+                      alt="Custom Sandwich Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Sandwich Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Sandwich Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Cheese Paper.webp"
+                      alt="Custom Cheese Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Cheese Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Cheese Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Basket Liner.webp"
+                      alt="Custom Basket Liner"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Basket Liner.html"
+                      class="hover:text-white text-base"
+                      >Custom Basket Liner</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Freezer Paper.webp"
+                      alt="Custom Freezer Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Freezer Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Freezer Paper</a
+                    >
+                  </li>
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Food Paper.webp"
+                      alt="Custom Food Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Food Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Food Paper</a
+                    >
+                  </li>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="flex flex-col gap-4 w-full sm:w-[30%]">
+                  <li class="flex items-center gap-3 whitespace-nowrap">
+                    <img
+                      src="assets/Home Page/Tile Images/Webp/Custom Hot Paper.webp"
+                      alt="Custom Hot Paper"
+                      class="w-16 h-10 rounded-md object-contain"
+                    />
+                    <a
+                      href="Custom Hot Paper.html"
+                      class="hover:text-white text-base"
+                      >Custom Hot Paper</a
+                    >
+                  </li>
+                </div>
               </ul>
             </li>
-    
+
             <a href="Blogs.html">
-              <li class="hover:text-[#d3996a] ease-in-out duration-300">Blogs</li>
+              <li class="hover:text-[#d3996a] ease-in-out duration-300">
+                Blogs
+              </li>
             </a>
             <a href="Contact.html">
               <li class="hover:text-[#d3996a] ease-in-out duration-300">
@@ -106,14 +244,16 @@
             </a>
           </ul>
         </div>
-    
+
         <!-- Quote Button Section -->
         <div>
-          <p class="bg-[#123636] hidden md:flex text-[#d3996a] px-4 py-3 rounded-xl">
+          <p
+            class="bg-[#123636] hidden md:flex text-[#d3996a] px-4 py-3 rounded-xl"
+          >
             Get a Quote
           </p>
         </div>
-    
+
         <!-- Mobile Menu Icon -->
         <div class="flex md:hidden">
           <i
@@ -125,89 +265,91 @@
     </div>
     <!-- Add this sidebar right after the navbar section -->
     <div
-    id="sidebar"
-    class="fixed top-0 right-0 h-full w-64 bg-[#123636] transform translate-x-full transition-transform duration-300 ease-in-out z-50"
-  >
-    <div
-      class="flex justify-between text-[#d3996a] items-center p-4 border-b border-[#d3996a]"
+      id="sidebar"
+      class="fixed top-0 right-0 h-full w-64 bg-[#123636] transform translate-x-full transition-transform duration-300 ease-in-out z-50"
     >
-      <h2 class="text-xl">Menu</h2>
-      <i
-        class="fa-solid text-[#d3996a] fa-times text-2xl cursor-pointer"
-        onclick="toggleSidebar()"
-      ></i>
+      <div
+        class="flex justify-between text-[#d3996a] items-center p-4 border-b border-[#d3996a]"
+      >
+        <h2 class="text-xl">Menu</h2>
+        <i
+          class="fa-solid text-[#d3996a] fa-times text-2xl cursor-pointer"
+          onclick="toggleSidebar()"
+        ></i>
+      </div>
+      <ul class="flex text-[#d3996a] flex-col p-4 gap-4">
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+
+        <!-- Products with Dropdown -->
+        <li class="relative">
+          <div
+            class="cursor-pointer flex justify-between items-center"
+            onclick="toggleDropdown()"
+          >
+            <span>Products</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <ul
+            id="productsDropdown"
+            class="hidden flex-col gap-2 bg-[#1a4545] p-2 mt-2 rounded-md"
+          >
+            <li class="hover:text-white">
+              <a href="Custom Deli Paper.html">Custom Deli Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Butcher Paper.html">Custom Butcher Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Kraft Paper.html">Custom Kraft Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Parchment Paper.html">Custom Parchment Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Greaseproof Paper.html"
+                >Custom Greaseproof Paper</a
+              >
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Sandwich Paper.html">Custom Sandwich Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Cheese Paper.html">Custom Cheese Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Basket Liner.html">Custom Basket Liner</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Freezer Paper.html">Custom Freezer Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Food Paper.html">Custom Food Paper</a>
+            </li>
+            <li class="hover:text-white">
+              <a href="Custom Hot Paper.html">Custom Hot Paper</a>
+            </li>
+          </ul>
+        </li>
+
+        <a href="Blogs.html">
+          <li>Blogs</li>
+        </a>
+        <a href="Contact.html">
+          <li>Contact Us</li>
+        </a>
+        <li class="cursor-pointer">Get a Quote</li>
+      </ul>
     </div>
-    <ul class="flex text-[#d3996a] flex-col p-4 gap-4">
-      <a href="index.html">
-        <li>Home</li>
-      </a>
-  
-      <!-- Products with Dropdown -->
-      <li class="relative">
-        <div
-          class="cursor-pointer flex justify-between items-center"
-          onclick="toggleDropdown()"
-        >
-          <span>Products</span>
-          <i class="fa-solid fa-chevron-down"></i>
-        </div>
-        <ul
-          id="productsDropdown"
-          class="hidden flex-col gap-2 bg-[#1a4545] p-2 mt-2 rounded-md"
-        >
-          <li class="hover:text-white">
-            <a href="Custom Deli Paper.html">Custom Deli Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Butcher Paper.html">Custom Butcher Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Kraft Paper.html">Custom Kraft Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Parchment Paper.html">Custom Parchment Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Greaseproof Paper.html">Custom Greaseproof Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Sandwich Paper.html">Custom Sandwich Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Cheese Paper.html">Custom Cheese Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Basket Liner.html">Custom Basket Liner</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Freezer Paper.html">Custom Freezer Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Food Paper.html">Custom Food Paper</a>
-          </li>
-          <li class="hover:text-white">
-            <a href="Custom Hot Paper.html">Custom Hot Paper</a>
-          </li>
-        </ul>
-      </li>
-  
-      <a href="Blogs.html">
-        <li>Blogs</li>
-      </a>
-      <a href="Contact.html">
-        <li>Contact Us</li>
-      </a>
-      <li class="cursor-pointer">Get a Quote</li>
-    </ul>
-  </div>
-  
-  <!-- Overlay -->
-  <div
-    id="overlay"
-    class="fixed inset-0 bg-black opacity-50 hidden z-40"
-    onclick="toggleSidebar()"
-  ></div>
-  
+
+    <!-- Overlay -->
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black opacity-50 hidden z-40"
+      onclick="toggleSidebar()"
+    ></div>
+
     <!-- Hero-Section -->
 
     <div class="md:my-20 mx-0 md:mx-20 lg:mx-0">
@@ -233,7 +375,7 @@
             </div>
             <div class="relative div2">
               <img
-                src="assets/img/Hero/Hero Page.png"
+                src="assets/img/Hero Page/Hero Page.webp"
                 class="hero-img"
                 alt="hero-img"
               />
@@ -260,314 +402,307 @@
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
       >
         <!-- Custom Deli Paper -->
-      <div
-        class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
-      >
-        <a href="Custom Deli Paper.html" class="w-full">
-          <div
-            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
-          >
-            <img
-              src="assets/Home Page/Tile Images/Webp/Custom Deli Paper.webp"
-              class="object-contain w-full h-full"
-              alt="Custom Deli Paper"
-            />
+        <div
+          class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
+        >
+          <a href="Custom Deli Paper.html">
             <div
-              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
             >
-              <span
-                class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
-                >View Product</span
+              <img
+                src="assets/Home Page/Tile Images/Webp/Custom Deli Paper.webp"
+                class="object-contain w-full h-full"
+                alt="Custom Deli Paper"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
               >
+                <span
+                  class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
+                  >View Product</span
+                >
+              </div>
             </div>
-          </div>
-          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
-            Custom Deli Paper
-          </p>
-        </a>
-      </div>      
-
+            <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+              Custom Deli Paper
+            </p>
+          </a>
+        </div>
         <!-- Custom Butcher Paper -->
         <div
-         class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
-          >
-         <a href="Custom Butcher Paper.html" class="w-full">
-         <div
-          class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
-          >
-          <img
-        src="assets/Home Page/Tile Images/Webp/Custom Butcher Paper.webp"
-        class="object-contain w-full h-full"
-        alt="Custom Butcher Paper"
-           />
-          <div
-        class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
-      >
-        <span
-          class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
-          >View Product</span
+          class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
         >
-          </div>
-         </div>
-           <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
-           Custom Butcher Paper
-          </p>
-         </a>
+          <a href="Custom Butcher Paper.html">
+            <div
+              class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
+            >
+              <img
+                src="assets/Home Page/Tile Images/Webp/Custom Butcher Paper.webp"
+                class="object-contain w-full h-full"
+                alt="Custom Butcher Paper"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span
+                  class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
+                  >View Product</span
+                >
+              </div>
+            </div>
+            <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+              Custom Butcher Paper
+            </p>
+          </a>
         </div>
-
 
         <!-- Custom Kraft Paper -->
         <div
           class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
         >
-        <a href="Custom Kraft Paper.html" class="w-full">
-          <div
-            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
-          >
-            <img
-              src="assets/Home Page/Tile Images/Webp/Custom Kraft Paper.webp"
-              class="object-contain w-full h-full"
-              alt="Custom Kraft Paper"
-            />
+          <a href="Custom Kraft Paper.html">
             <div
-              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
             >
+              <img
+                src="assets/Home Page/Tile Images/Webp/Custom Kraft Paper.webp"
+                class="object-contain w-full h-full"
+                alt="Custom Kraft Paper"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
                 <span
                   class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
                   >View Product</span
                 >
+              </div>
             </div>
-          </div>
-          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
-            Custom Kraft Paper
-          </p>
-        </a>
+            <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+              Custom Kraft Paper
+            </p>
+          </a>
         </div>
 
         <!-- Custom Parchment Paper -->
         <div
           class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
         >
-        <a href="Custom Parchment Paper.html" class="w-full">
-          <div
-            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
-          >
-            <img
-              src="assets/Home Page/Tile Images/Webp/Custom Parchment Paper.webp"
-              class="object-contain w-full h-full"
-              alt="Custom Parchment Paper"
-            />
+          <a href="Custom Parchment Paper.html">
             <div
-              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
             >
+              <img
+                src="assets/Home Page/Tile Images/Webp/Custom Parchment Paper.webp"
+                class="object-contain w-full h-full"
+                alt="Custom Parchment Paper"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
                 <span
                   class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
                   >View Product</span
                 >
+              </div>
             </div>
-          </div>
-          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
-            Custom Parchment Paper
-          </p>
-        </a>
+            <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+              Custom Parchment Paper
+            </p>
+          </a>
         </div>
 
         <!-- Custom Greaseproof Paper -->
         <div
           class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
         >
-        <a href="Custom Greaseproof Paper.html" class="w-full">
-          <div
-            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
-          >
-            <img
-              src="assets/Home Page/Tile Images/Webp/Custom Greaseproof Paper.webp"
-              class="object-contain w-full h-full"
-              alt="Custom Greaseproof Paper"
-            />
+          <a href="Custom Greaseproof Paper.html">
             <div
-              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
             >
-              
+              <img
+                src="assets/Home Page/Tile Images/Webp/Custom Greaseproof Paper.webp"
+                class="object-contain w-full h-full"
+                alt="Custom Greaseproof Paper"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
                 <span
                   class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
                   >View Product</span
                 >
+              </div>
             </div>
-          </div>
-          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
-            Custom Greaseproof Paper
-          </p>
-        </a>
+            <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+              Custom Greaseproof Paper
+            </p>
+          </a>
         </div>
 
         <!-- Custom Sandwich Paper -->
         <div
           class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
         >
-        <a href="Custom Sandwich Paper.html" class="w-full">
-          <div
-            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
-          >
-            <img
-              src="assets/Home Page/Tile Images/Webp/Custom Sandwich Paper.webp"
-              class="object-contain w-full h-full"
-              alt="Custom Sandwich Paper"
-            />
+          <a href="Custom Sandwich Paper.html">
             <div
-              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
             >
+              <img
+                src="assets/Home Page/Tile Images/Webp/Custom Sandwich Paper.webp"
+                class="object-contain w-full h-full"
+                alt="Custom Sandwich Paper"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
                 <span
                   class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
                   >View Product</span
                 >
+              </div>
             </div>
-          </div>
-          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
-            Custom Sandwich Paper
-          </p>
-        </a>
+            <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+              Custom Sandwich Paper
+            </p>
+          </a>
         </div>
 
         <!-- Custom Cheese Paper -->
         <div
           class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
         >
-        <a href="Custom Cheese Paper.html" class="w-full">
-          <div
-            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
-          >
-            <img
-              src="assets/Home Page/Tile Images/Webp/Custom Cheese Paper.webp"
-              class="object-contain w-full h-full"
-              alt="Custom Cheese Paper"
-            />
+          <a href="Custom Cheese Paper.html">
             <div
-              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
             >
+              <img
+                src="assets/Home Page/Tile Images/Webp/Custom Cheese Paper.webp"
+                class="object-contain w-full h-full"
+                alt="Custom Cheese Paper"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
                 <span
                   class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
                   >View Product</span
                 >
+              </div>
             </div>
-          </div>
-          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
-            Custom Cheese Paper
-          </p>
-        </a>
+            <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+              Custom Cheese Paper
+            </p>
+          </a>
         </div>
 
         <!-- Custom Basket Liner -->
         <div
           class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
         >
-        <a href="Custom Basket Liner.html" class="w-full">
-          <div
-            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
-          >
-            <img
-              src="assets/Home Page/Tile Images/Webp/Custom Basket Liner.webp"
-              class="object-contain w-full h-full"
-              alt="Custom Basket Liner"
-            />
+          <a href="Custom Basket Liner.html">
             <div
-              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
             >
+              <img
+                src="assets/Home Page/Tile Images/Webp/Custom Basket Liner.webp"
+                class="object-contain w-full h-full"
+                alt="Custom Basket Liner"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
                 <span
                   class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
                   >View Product</span
                 >
+              </div>
             </div>
-          </div>
-          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
-            Custom Basket Liner
-          </p>
-        </a>
+            <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+              Custom Basket Liner
+            </p>
+          </a>
         </div>
 
         <!-- Custom Freezer Paper -->
         <div
           class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
         >
-        <a href="Custom Freezer Paper.html" class="w-full">
-          <div
-            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
-          >
-            <img
-              src="assets/Home Page/Tile Images/Webp/Custom Freezer Paper.webp"
-              class="object-contain w-full h-full"
-              alt="Custom Freezer Paper"
-            />
+          <a href="Custom Freezer Paper.html">
             <div
-              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
             >
+              <img
+                src="assets/Home Page/Tile Images/Webp/Custom Freezer Paper.webp"
+                class="object-contain w-full h-full"
+                alt="Custom Freezer Paper"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
                 <span
                   class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
                   >View Product</span
                 >
+              </div>
             </div>
-          </div>
-          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
-            Custom Freezer Paper
-          </p>
-        </a>
+            <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+              Custom Freezer Paper
+            </p>
+          </a>
         </div>
 
         <div
           class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
         >
-        <a href="Custom Food Paper.html" class="w-full">
-          <div
-            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
-          >
-            <img
-              src="assets/Home Page/Tile Images/Webp/Custom Food Paper.webp"
-              class="object-contain w-full h-full"
-              alt="Custom Food Paper"
-            />
+          <a href="Custom Food Paper.html">
             <div
-              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
             >
-             
+              <img
+                src="assets/Home Page/Tile Images/Webp/Custom Food Paper.webp"
+                class="object-contain w-full h-full"
+                alt="Custom Food Paper"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
                 <span
                   class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
                   >View Product</span
                 >
-             
+              </div>
             </div>
-          </div>
-          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
-            Custom Food Paper
-          </p>
-        </a>
+            <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+              Custom Food Paper
+            </p>
+          </a>
         </div>
         <div
           class="w-full rounded-2xl cursor-pointer flex flex-col justify-center items-center group relative p-4 bg-[#123636]"
         >
-        <a href="Custom Hot Paper.html" class="w-full">
-          <div
-            class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
-          >
-            <img
-              src="assets/Home Page/Tile Images/Webp/Custom Hot Paper.webp"
-              class="object-contain w-full h-full"
-              alt="Custom Hot Paper"
-            />
+          <a href="Custom Hot Paper.html">
             <div
-              class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              class="aspect-w-1 aspect-h-1 w-full max-w-[260px] flex justify-center items-center rounded-xl relative overflow-hidden bg-white"
             >
-              
+              <img
+                src="assets/Home Page/Tile Images/Webp/Custom Hot Paper.webp"
+                class="object-contain w-full h-full"
+                alt="Custom Hot Paper"
+              />
+              <div
+                class="absolute inset-0 bg-black/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
                 <span
                   class="font-semibold bg-[#e8862d] px-4 py-2 rounded-xl text-[#123636]"
                   >View Product</span
                 >
-              
+              </div>
             </div>
-          </div>
-          <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
-            Custom Hot Paper
-          </p>
-        </a>
+            <p class="text-[#d3996a] text-xl font-semibold mt-2 text-center">
+              Custom Hot Paper
+            </p>
+          </a>
         </div>
       </div>
     </div>
@@ -751,7 +886,7 @@
         <div class="help_buttons">
           <div class="flex flex-col gap-2">
             <i
-              class="fas fa-leaf ml-6 md:ml-2  text-xl -mb-2 text-[#d3996a]"
+              class="fas fa-leaf ml-6 md:ml-2 text-xl -mb-2 text-[#d3996a]"
             ></i>
             <button>Eco Friendly</button>
           </div>
@@ -999,7 +1134,7 @@
               />
             </div>
           </div>
-    
+
           <!-- Phone and Size Unit Row -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
@@ -1021,7 +1156,7 @@
               </select>
             </div>
           </div>
-    
+
           <!-- Length, Width, and Dropdown Fields -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="flex gap-4">
@@ -1041,7 +1176,9 @@
               </div>
             </div>
             <div>
-              <label class="block text-gray-700 mb-2">Select Color Print Option</label>
+              <label class="block text-gray-700 mb-2"
+                >Select Color Print Option</label
+              >
               <select
                 class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
               >
@@ -1052,7 +1189,7 @@
               </select>
             </div>
           </div>
-    
+
           <!-- Shipping and Paper Color Dropdown -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
@@ -1067,14 +1204,20 @@
               </select>
             </div>
             <div>
-              <label class="block text-gray-700 mb-2">Quantity</label>
-              <input
-                type="number"
+              <label class="block text-gray-700 mb-2"
+                >Select the Shipping Option</label
+              >
+              <select
                 class="w-full border rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
-              />
+              >
+                <option value="">Select Shipping Option</option>
+                <option value="standard">Standard (1-3 Months)</option>
+                <option value="express">Express (Less than 1 Month)</option>
+                <option value="urgent">Urgent (6-8 Days)</option>
+              </select>
             </div>
           </div>
-    
+
           <!-- Other Requirements -->
           <div class="flex flex-col md:flex-row gap-6">
             <div class="md:w-1/2">
@@ -1086,7 +1229,9 @@
             </div>
             <div class="md:w-1/2 flex flex-col gap-6">
               <div>
-                <label class="block text-gray-700 mb-2">Upload Prototype / Sample if you have</label>
+                <label class="block text-gray-700 mb-2"
+                  >Upload Prototype / Sample if you have</label
+                >
                 <div class="flex items-center gap-4">
                   <label
                     class="cursor-pointer bg-gray-200 px-4 py-2 rounded-lg hover:bg-gray-300"
@@ -1098,8 +1243,12 @@
                 </div>
               </div>
               <div class="flex flex-1 flex-col w-full md:flex-row gap-6">
-                <div class="bg-gray-200 flex-1 flex justify-around py-2 items-center">
-                  <div class="items-center flex justify-center items-center gap-2">
+                <div
+                  class="bg-gray-200 flex-1 flex justify-around py-2 items-center"
+                >
+                  <div
+                    class="items-center flex justify-center items-center gap-2"
+                  >
                     <input type="checkbox" class="w-5 h-5" /> I am not a Robot
                   </div>
                   <img src="assets/img/recaptcha.png" class="w-10" />
@@ -1107,7 +1256,7 @@
               </div>
             </div>
           </div>
-    
+
           <!-- Submit Button -->
           <div class="flex justify-end">
             <button
@@ -1120,7 +1269,6 @@
         </form>
       </div>
     </div>
-    
 
     <!-- Customise-Section -->
 
@@ -1803,9 +1951,9 @@
       </div>
     </div>
 
-     <!-- Footer -->
+    <!-- Footer -->
 
-     <div class="bg-[#123636]">
+    <div class="bg-[#123636]">
       <div class="flex flex-col gap-5 md:gap-0 py-10 md:py-20 md:flex-row">
         <!-- Left Section -->
         <div
@@ -1831,7 +1979,7 @@
             </button>
           </div>
         </div>
-    
+
         <!-- Middle Section -->
         <div
           class="md:w-1/3 flex items-center px-3 md:px-5 md:justify-center text-[#d3996a] w-full"
@@ -1846,7 +1994,7 @@
             <li><a href="#">Terms and Conditions</a></li>
           </ul>
         </div>
-    
+
         <!-- Right Section -->
         <div
           class="md:w-1/3 flex items-center px-3 md:px-5 md:justify-center text-[#d3996a] w-full"
@@ -1859,23 +2007,31 @@
             <li>BROOKLYN, NY 11216</li>
             <li class="text-center text-lg md:text-2xl font-bold">Follow</li>
             <li class="flex justify-center gap-3 md:gap-5">
-              <a href="#"> <i class="fa-brands text-2xl md:text-3xl fa-facebook"></i> </a>
-              <a href="#"> <i class="fa-brands text-2xl md:text-3xl fa-instagram"></i> </a>
-              <a href="#"> <i class="fa-brands text-2xl md:text-3xl fa-linkedin"></i> </a>
-              <a href="#"> <i class="fa-brands fa-twitter text-2xl md:text-3xl"></i> </a>
+              <a href="#">
+                <i class="fa-brands text-2xl md:text-3xl fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands text-2xl md:text-3xl fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands text-2xl md:text-3xl fa-linkedin"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-twitter text-2xl md:text-3xl"></i>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-     <!-- Scroll to Top Button -->
-     <button
-     id="scrollToTopBtn"
+    <!-- Scroll to Top Button -->
+    <button
+      id="scrollToTopBtn"
       class="fixed bottom-5 right-5 bg-[#123636] text-[#d3996a] p-3 rounded-full shadow-lg hidden"
       onclick="scrollToTop()"
-     aria-label="Scroll to Top"
-         >
-     <i class="fa-solid fa-arrow-up text-2xl"></i>
+      aria-label="Scroll to Top"
+    >
+      <i class="fa-solid fa-arrow-up text-2xl"></i>
     </button>
     <style>
       #mainImage {
