@@ -137,18 +137,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   prevButton.addEventListener("click", () => {
-    const newIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+    const newIndex = (currentIndex - 1 + 5) % 5; // Total images in the carousel
     updateCarousel(newIndex);
   });
 
   nextButton.addEventListener("click", () => {
-    const newIndex = (currentIndex + 1) % thumbnails.length;
+    const newIndex = (currentIndex + 1) % 5;
     updateCarousel(newIndex);
   });
 
   thumbnails.forEach((thumbnail, index) => {
     thumbnail.addEventListener("click", () => {
-      updateCarousel(index);
+      updateCarousel(index + 1); // Offset to skip `webp1`
     });
   });
 });
+
