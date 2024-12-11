@@ -333,3 +333,13 @@
   display: block; /* Show when scrolled down */
 }
 
+#carousel-images img {
+  flex: 0 0 100%; /* Ensures each image takes 100% width of the carousel */
+  max-width: 100%; /* Avoids overflow */
+}
+
+#carousel-images {
+  display: flex;
+  width: 500%; /* Adjust the width to match the number of slides */
+  transition: transform 0.5s ease-in-out;
+}
